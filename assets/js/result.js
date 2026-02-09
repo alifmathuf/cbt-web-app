@@ -20,3 +20,8 @@ if (state.kasus.jawaban) {
     kasusDiv.appendChild(el);
   });
 }
+import { exportPDF } from "./export-pdf.js";
+
+document.getElementById("btnPdf")
+  .addEventListener("click", exportPDF);
+}
