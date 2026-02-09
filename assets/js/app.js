@@ -15,3 +15,15 @@ function login() {
   // ABSOLUTE PATH
   window.location.href = '/cbt-web-app/pages/dashboard.html';
 }
+function toggleTheme() {
+  document.body.classList.toggle('dark');
+  localStorage.setItem(
+    'theme',
+    document.body.classList.contains('dark') ? 'dark' : 'light'
+  );
+}
+
+// LOAD SAAT AWAL
+if (localStorage.getItem('theme') === 'dark') {
+  document.body.classList.add('dark');
+}
