@@ -25,3 +25,15 @@ function mulaiUjian() {
     window.location.href = '/cbt-web-app/pages/exam-case.html';
   }
 }
+const hasilPG = JSON.parse(localStorage.getItem('hasilPG'));
+const hasilCase = JSON.parse(localStorage.getItem('hasilCase'));
+
+const rekap = document.getElementById('rekap');
+
+if (hasilPG) {
+  rekap.innerText = `PG: Nilai ${hasilPG.nilai}`;
+}
+
+if (hasilCase) {
+  rekap.innerText += ` | Studi Kasus: ${hasilCase.jenis}`;
+}
