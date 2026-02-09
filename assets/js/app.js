@@ -1,16 +1,16 @@
-async function loadComponent(id, file) {
-  const el = document.getElementById(id);
-  if (!el) return;
+function login() {
+  const nama = document.getElementById('nama').value.trim();
+  const kelas = document.getElementById('kelas').value.trim();
 
-  const res = await fetch(file);
-  el.innerHTML = await res.text();
-}
+  if (!nama || !kelas) {
+    alert('Nama dan kelas wajib diisi');
+    return;
+  }
 
-loadComponent("app-header", "components/header.html");
-loadComponent("app-footer", "components/footer.html");
-import { load } from "./components.js";
+  localStorage.setItem('cbtUser', JSON.stringify({
+    nama,
+    kelas
+  }));
 
-load("app-header", "components/header.html");
-load("app-footer", "components/footer.html");
-load("exam-header", "components/header-exam.html");
+  window.location.href = './pages/dashboard.html';
 }
