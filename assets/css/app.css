@@ -42,17 +42,6 @@ body {
   border-radius: 10px;
 }
 
-/* ===== LOGIN PAGE FIX ===== */
-.login-container button {
-  background: #2563eb;
-  color: #ffffff;
-  font-weight: 600;
-}
-
-.login-container button:hover {
-  background: #1d4ed8;
-}
-
 /* GENERAL */
 .container {
   max-width: 1100px;
@@ -194,17 +183,4 @@ button {
 button.primary {
   background: #2563eb;
   color: #fff;
-}
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-footer {
-  margin-top: auto;
-  padding: 12px;
-  text-align: center;
-  font-size: 13px;
-  opacity: .7;
 }
