@@ -1,0 +1,15 @@
+:root {
+  --bg: #f4f6fb;
+  --card: #ffffff;
+  --text: #1f2937;
+  --primary: #2563eb;
+  --border: #e5e7eb;
+}
+
+body.dark {
+  --bg: #0f172a;
+  --card: #1e293b;
+  --text: #e5e7eb;
+  --primary: #60a5fa;
+  --border: #334155;
+}
