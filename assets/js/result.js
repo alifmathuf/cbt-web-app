@@ -55,6 +55,7 @@ if (hasilCase) {
     </div>
   `;
 }
+
 function kembali() {
   window.location.href = '/cbt-web-app/pages/dashboard.html';
 }
