@@ -8,3 +8,7 @@ async function loadComponent(id, file) {
 
 loadComponent("app-header", "components/header.html");
 loadComponent("app-footer", "components/footer.html");
+import { load } from "./components.js";
+
+load("app-header", "components/header.html");
+load("app-footer", "components/footer.html");
