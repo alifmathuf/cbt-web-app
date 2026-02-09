@@ -1,27 +1,46 @@
-import { State } from "./store/state.js";
+const user = JSON.parse(localStorage.getItem('cbtUser'));
+const hasil = JSON.parse(localStorage.getItem('hasilPG'));
 
-const state = State.get();
-
-document.getElementById("userName").textContent =
-  state.user?.name || "Peserta";
-
-document.getElementById("pgScore").textContent =
-  state.pg.score ?? "Belum dinilai";
-
-const kasusDiv = document.getElementById("kasusSummary");
-
-if (state.kasus.jawaban) {
-  Object.entries(state.kasus.jawaban).forEach(([jenis, isi]) => {
-    const el = document.createElement("div");
-    el.innerHTML = `
-      <h4>${jenis}</h4>
-      <p>${isi.substring(0, 200)}...</p>
-    `;
-    kasusDiv.appendChild(el);
-  });
+if (!user || !hasil) {
+  window.location.href = '/cbt-web-app/index.html';
 }
-import { exportPDF } from "./export-pdf.js";
 
-document.getElementById("btnPdf")
-  .addEventListener("click", exportPDF);
+// TAMPILKAN DATA
+document.getElementById('namaPeserta').innerText =
+  `${user.nama} (${user.kelas})`;
+
+document.getElementById('benar').innerText = hasil.benar;
+document.getElementById('total').innerText = hasil.total;
+document.getElementById('nilai').innerText = hasil.nilai;
+
+const status =
+  hasil.nilai >= 75
+    ? '✅ LULUS'
+    : '❌ BELUM LULUS';
+
+document.getElementById('status').innerText = status;
+
+// CHART
+const ctx = document.getElementById('chartNilai');
+
+new Chart(ctx, {
+  type: 'doughnut',
+  data: {
+    labels: ['Benar', 'Salah'],
+    datasets: [{
+      data: [
+        hasil.benar,
+        hasil.total - hasil.benar
+      ]
+    }]
+  },
+  options: {
+    plugins: {
+      legend: { position: 'bottom' }
+    }
+  }
+});
+
+function kembali() {
+  window.location.href = '/cbt-web-app/pages/dashboard.html';
 }
