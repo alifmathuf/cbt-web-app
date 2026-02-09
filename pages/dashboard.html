@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dashboard CBT</title>
-
+  
+<h3 id="greeting"></h3>
   <link rel="stylesheet" href="../assets/css/theme.css" />
   <link rel="stylesheet" href="../assets/css/app.css" />
 </head>
@@ -12,53 +13,37 @@
 
 <main class="container">
 
-  <!-- HEADER DASHBOARD -->
   <div class="card">
-    <h3 id="greeting">Assalaamualaikum</h3>
-    <p id="userInfo">Dashboard Peserta</p>
+    
+    
+    <h2 id="userInfo">Dashboard</h2>
+    <p>Silakan pilih ujian</p>
   </div>
-
-  <!-- PILIH MAPEL -->
   <div class="dashboard-grid">
-    <div class="card mapel" onclick="pilihMapel('qurdist')">Qurdis</div>
-    <div class="card mapel" onclick="pilihMapel('aqidah')">Aqidah</div>
-    <div class="card mapel" onclick="pilihMapel('fiqih')">Fiqih</div>
-    <div class="card mapel" onclick="pilihMapel('ski')">SKI</div>
-  </div>
+  <div class="card mapel" onclick="pilihMapel('qurdist')">Qurdis</div>
+  <div class="card mapel" onclick="pilihMapel('aqidah')">Aqidah</div>
+  <div class="card mapel" onclick="pilihMapel('fiqih')">Fiqih</div>
+  <div class="card mapel" onclick="pilihMapel('ski')">SKI</div>
+</div>
 
-  <!-- PILIH TIPE -->
   <div class="card">
-    <h4>Tipe Ujian</h4>
-    <label>
-      <input type="radio" name="tipe" value="pg"> Pilihan Ganda
-    </label><br>
-    <label>
-      <input type="radio" name="tipe" value="case"> Studi Kasus
-    </label>
+    <label>Tipe Ujian</label><br>
+    <input type="radio" name="tipe" value="pg"> Pilihan Ganda<br>
+    <input type="radio" name="tipe" value="case"> Studi Kasus
   </div>
 
-  <!-- AKSI -->
+  <button onclick="mulaiUjian()">Mulai Ujian</button>
+
   <div class="card">
-    <button class="primary" onclick="mulaiUjian()">
-      Mulai Ujian
-    </button>
-  </div>
-
-  <!-- HASIL -->
-  <div class="card">
-    <h4>Hasil Terakhir</h4>
-    <p id="rekap">Belum ada hasil</p>
-
-    <button onclick="logout()" style="margin-top:10px;background:#ef4444;color:#fff">
-      Keluar
-    </button>
-  </div>
-
+  <h3>Hasil Terakhir</h3>
+  <p id="rekap">Belum ada hasil</p>
+    <button class="btn-logout" onclick="logout()">Keluar</button>
+</div>
 </main>
 
 <footer>© CBT Web App</footer>
-
 <script src="../assets/js/app.js"></script>
+
 <script src="../assets/js/dashboard.js"></script>
 </body>
 </html>
