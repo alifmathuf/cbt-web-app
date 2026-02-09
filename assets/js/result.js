@@ -56,48 +56,7 @@ if (hasilCase) {
   `;
 }
 
-function exportPDF() {
-  const { jsPDF } = window.jspdf;
-  const doc = new jsPDF();
 
-  let y = 20;
-
-  doc.setFontSize(14);
-  doc.text('HASIL UJIAN CBT', 20, y);
-  y += 10;
-
-  doc.setFontSize(11);
-  doc.text(`Nama: ${user.nama}`, 20, y); y += 7;
-  doc.text(`Kelas: ${user.kelas}`, 20, y); y += 10;
-
-  if (hasilPG) {
-    doc.text('Pilihan Ganda', 20, y); y += 7;
-    doc.text(`Benar: ${hasilPG.benar}`, 25, y); y += 6;
-    doc.text(`Total: ${hasilPG.total}`, 25, y); y += 6;
-    doc.text(`Nilai: ${hasilPG.nilai}`, 25, y); y += 10;
-  }
-
-  if (hasilCase) {
-    doc.text('Studi Kasus', 20, y); y += 7;
-    doc.text(`Jenis: ${hasilCase.jenis}`, 25, y); y += 6;
-
-    let totalKata = 0;
-    let totalKarakter = 0;
-
-    hasilCase.jawaban.forEach(t => {
-      totalKarakter += t.length;
-      totalKata += t.trim().split(/\s+/).filter(Boolean).length;
-    });
-
-    doc.text(`Total Kata: ${totalKata}`, 25, y); y += 6;
-    doc.text(`Total Karakter: ${totalKarakter}`, 25, y); y += 10;
-  }
-
-  doc.save(`hasil_${user.nama}.pdf`);
-}
-function kembali() {
-  window.location.href = '/cbt-web-app/pages/dashboard.html';
-}
 
 function exportPDF() {
   const { jsPDF } = window.jspdf;
