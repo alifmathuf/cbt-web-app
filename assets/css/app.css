@@ -161,3 +161,21 @@ button:hover {
 button {
   cursor: pointer;
 }
+.container {
+  max-width: 960px;
+  margin: auto;
+  padding: 16px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 12px;
+  }
+}
+
+.card {
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,.05);
+}
