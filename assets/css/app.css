@@ -208,3 +208,15 @@ footer {
   font-size: 13px;
   opacity: .7;
 }
+
+.mapel {
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.mapel:hover {
+  transform: translateY(-4px);
+  background: rgba(59,130,246,.15);
+}
