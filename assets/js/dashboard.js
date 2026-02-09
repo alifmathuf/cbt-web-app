@@ -1,15 +1,39 @@
+/* =========================
+   CEK LOGIN
+========================= */
 const user = JSON.parse(localStorage.getItem('cbtUser'));
 
 if (!user) {
-  // ABSOLUTE PATH (AMAN GITHUB PAGES)
   window.location.href = '/cbt-web-app/index.html';
 }
 
-document.getElementById('userInfo').innerText =
-  `Halo, ${user.nama} (${user.kelas})`;
+/* =========================
+   PILIH MAPEL
+========================= */
+let selectedMapel = null;
 
+function pilihMapel(mapel) {
+  selectedMapel = mapel;
+
+  document
+    .querySelectorAll('.mapel')
+    .forEach(el => el.classList.remove('active'));
+
+  const aktif = [...document.querySelectorAll('.mapel')]
+    .find(el => el.innerText.toLowerCase().includes(mapel));
+
+  if (aktif) aktif.classList.add('active');
+}
+
+/* =========================
+   MULAI UJIAN
+========================= */
 function mulaiUjian() {
-  const mapel = document.getElementById('mapel').value;
+  if (!selectedMapel) {
+    alert('Pilih mata pelajaran terlebih dahulu');
+    return;
+  }
+
   const tipe = document.querySelector('input[name="tipe"]:checked');
 
   if (!tipe) {
@@ -17,7 +41,7 @@ function mulaiUjian() {
     return;
   }
 
-  localStorage.setItem('mapel', mapel);
+  localStorage.setItem('mapel', selectedMapel);
 
   if (tipe.value === 'pg') {
     window.location.href = '/cbt-web-app/pages/exam-pg.html';
@@ -25,32 +49,25 @@ function mulaiUjian() {
     window.location.href = '/cbt-web-app/pages/exam-case.html';
   }
 }
-const hasilPG = JSON.parse(localStorage.getItem('hasilPG'));
-const hasilCase = JSON.parse(localStorage.getItem('hasilCase'));
 
+/* =========================
+   REKAP HASIL
+========================= */
 const rekap = document.getElementById('rekap');
+let teks = [];
 
+const hasilPG = JSON.parse(localStorage.getItem('hasilPG'));
 if (hasilPG) {
-  rekap.innerText = `PG: Nilai ${hasilPG.nilai}`;
+  teks.push(`PG: Nilai ${hasilPG.nilai}`);
 }
 
+const hasilCase = JSON.parse(localStorage.getItem('hasilCase'));
 if (hasilCase) {
-  rekap.innerText += ` | Studi Kasus: ${hasilCase.jenis}`;
+  teks.push(`Studi Kasus: ${hasilCase.jenis}`);
 }
-document.addEventListener('DOMContentLoaded', () => {
-  const user = JSON.parse(localStorage.getItem('user'));
-  const greetEl = document.getElementById('greeting');
 
-  if (greetEl && user) {
-    greetEl.textContent = `${greetingByTime()}, ${user.nama}`;
-  }
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-  const user = JSON.parse(localStorage.getItem('user'));
-  const greet = document.getElementById('greeting');
-
-  if (user && greet) {
-    greet.textContent = `${greetingByTime()}, ${user.nama}`;
-  }
-});
+if (rekap) {
+  rekap.innerText = teks.length
+    ? teks.join(' | ')
+    : 'Belum ada hasil';
+}
