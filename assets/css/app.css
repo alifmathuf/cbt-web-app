@@ -179,3 +179,8 @@ button {
   margin-bottom: 16px;
   box-shadow: 0 10px 25px rgba(0,0,0,.05);
 }
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
