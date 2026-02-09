@@ -2,46 +2,42 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Hasil Ujian | CBT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hasil Ujian</title>
 
-  <link rel="icon" href="../assets/icons/favicon.ico">
-
-  <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/theme.css">
-  <link rel="stylesheet" href="../assets/css/layout.css">
-  <link rel="stylesheet" href="../assets/css/components.css">
   <link rel="stylesheet" href="../assets/css/app.css">
-<link rel="stylesheet" href="/cbt-web-app/assets/css/app.css">
 </head>
-
 <body>
-  <div id="app-header"></div>
 
-  <main class="result">
-    <section class="card result-header">
-      <h2>Hasil Ujian</h2>
-      <p id="userName"></p>
-    </section>
+<main class="container">
 
-    <section class="card">
-      <h3>Nilai Pilihan Ganda</h3>
-      <div class="score" id="pgScore">-</div>
-    </section>
+  <div class="card" style="text-align:center">
+    <h2>Hasil Ujian</h2>
+    <p id="namaPeserta"></p>
+  </div>
 
-    <section class="card">
-      <h3>Studi Kasus</h3>
-      <div id="kasusSummary"></div>
-    </section>
+  <div class="card">
+    <canvas id="chartNilai" height="200"></canvas>
+  </div>
 
-    <section class="actions">
-      <button class="btn primary" id="btnPdf">Export PDF</button>
-    </section>
-  </main>
+  <div class="card">
+    <p><b>Jawaban Benar:</b> <span id="benar"></span></p>
+    <p><b>Total Soal:</b> <span id="total"></span></p>
+    <p><b>Nilai:</b> <span id="nilai"></span></p>
+    <p id="status"></p>
+  </div>
 
-  <div id="app-footer"></div>
+  <div class="card">
+    <button onclick="kembali()">Kembali ke Dashboard</button>
+  </div>
 
-  <script type="module" src="../assets/js/app.js"></script>
-  <script type="module" src="../assets/js/result.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</main>
+
+<footer>© CBT Web App</footer>
+
+<!-- CHART.JS CDN -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="../assets/js/result.js"></script>
 </body>
 </html>
