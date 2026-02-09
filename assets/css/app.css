@@ -1,3 +1,42 @@
+/* =========================
+   DASHBOARD
+========================= */
+
+.dashboard {
+  padding: 16px;
+  display: grid;
+  gap: 16px;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.04);
+}
+
+.user-card {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+}
+
+.stat span {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
 .footer {
   text-align: center;
   padding: 12px;
