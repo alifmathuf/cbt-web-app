@@ -48,3 +48,25 @@ body {
   outline: 2px solid var(--primary);
   background: rgba(59,130,246,.25);
 }
+
+/* =====================
+   LOGIN PAGE FIX TOTAL
+===================== */
+body.login-body {
+  display: block;
+  min-height: 100vh;
+}
+
+.login-page {
+  min-height: calc(100vh - 40px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body.login-body footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
