@@ -463,19 +463,40 @@ footer {
   transform: translateY(-2px);
 }
 /* =========================
-   RESULT CHART FIX SIZE
+   SCORE RING (CHART BARU)
 ========================= */
-.chart-wrapper {
-  width: 100%;
-  max-width: 360px;   /* 🔥 batas keras */
-  height: 260px;      /* 🔥 chart ikut ini */
-  margin: 0 auto 20px;
-  position: relative;
+.score-ring {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
 }
 
-.chart-wrapper canvas {
-  width: 100% !important;
-  height: 100% !important;
+.ring {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background:
+    conic-gradient(
+      #22c55e 0% 78%,
+      rgba(255,255,255,0.15) 78% 100%
+    );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: inset 0 0 0 14px rgba(15,23,42,.9);
 }
+
+.ring .score {
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.ring small {
+  font-size: 13px;
+  opacity: .75;
+}
+
 
 
