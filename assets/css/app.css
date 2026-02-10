@@ -470,3 +470,6 @@ footer {
     min-width: 100%;
   }
 }
+.result-card {
+  text-align: center;
+}
