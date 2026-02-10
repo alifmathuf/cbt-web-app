@@ -462,15 +462,14 @@ footer {
   background: linear-gradient(135deg, #22c55e, #16a34a);
   transform: translateY(-2px);
 }
-/* =========================
-   RESULT – CHART FIX
-========================= */
-.result-chart {
-  max-width: 260px;          /* <<< ukuran ideal */
-  margin: 0 auto 16px;
+/* ===== RESULT CHART ===== */
+.chart-card {
+  max-width: 420px;
+  margin: 0 auto;
 }
 
-.result-chart canvas {
+.chart-card canvas {
   width: 100% !important;
-  height: auto !important;
+  height: 260px !important;
 }
+
