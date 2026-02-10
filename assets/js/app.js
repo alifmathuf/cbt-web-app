@@ -15,3 +15,9 @@ function login() {
   // ABSOLUTE PATH
   window.location.href = '/cbt-web-app/pages/dashboard.html';
 }
+function logout() {
+  if (confirm('Yakin ingin keluar?')) {
+    localStorage.clear();
+    window.location.href = '../index.html';
+  }
+}
