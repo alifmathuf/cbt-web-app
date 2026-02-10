@@ -419,26 +419,16 @@ textarea:focus {
   background: linear-gradient(135deg, #22c55e, #16a34a);
 }
 
-/* ==================================================
-   REKAP HASIL TERAKHIR
-================================================== */
-.rekap-box {
-  margin-top: 14px;
-  padding: 16px;
-  border-radius: 16px;
 
-  background: rgba(255,255,255,0.08);
-  backdrop-filter: blur(6px);
-
+.greeting-card {
   text-align: center;
 }
 
-#rekap {
-  margin: 0;
+.result-card p {
   font-size: 15px;
   font-weight: 600;
-  color: #f8fafc;
-  letter-spacing: .3px;
+  margin-top: 10px;
+  opacity: .9;
 }
 
 /* ==================================================
@@ -469,7 +459,4 @@ footer {
   .result-actions button {
     min-width: 100%;
   }
-}
-.result-card {
-  text-align: center;
 }
