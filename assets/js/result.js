@@ -1,39 +1,43 @@
-// 1. Ambil data dengan kunci yang konsisten
-const userData = JSON.parse(localStorage.getItem('cbtUser')); 
+// Gunakan satu kunci yang konsisten: 'cbtUser'
+const userData = JSON.parse(localStorage.getItem('cbtUser'));
 const hasilPG = JSON.parse(localStorage.getItem('hasilPG'));
 const hasilCase = JSON.parse(localStorage.getItem('hasilCase'));
 
-// Cek apakah user sudah login
+// Validasi data
 if (!userData) {
-  alert('Data hasil tidak ditemukan');
+  alert('Data user tidak ditemukan, silakan login kembali');
   window.location.href = '/cbt-web-app/index.html';
 }
 
-// 2. Tampilkan Nama dan Kelas
-// Pastikan di HTML ada id="namaPeserta"
-const namaEl = document.getElementById('namaPeserta');
-if (namaEl) {
-  namaEl.innerText = `${userData.nama} (${userData.kelas})`;
+// 1. MENAMPILKAN NAMA (Pastikan ID di HTML adalah 'namaPeserta')
+if (document.getElementById('namaPeserta')) {
+  document.getElementById('namaPeserta').innerText = `${userData.nama} (${userData.kelas})`;
 }
 
-// 3. Logika Menampilkan Skor PG
+// 2. UPDATE SKOR PG
 if (hasilPG) {
-  document.getElementById('benar').innerText = hasilPG.benar;
-  document.getElementById('total').innerText = hasilPG.total;
-  document.getElementById('nilai').innerText = hasilPG.nilai;
+  const nilaiAngka = hasilPG.nilai || 0;
   
-  // Update Status Lulus
-  const statusEl = document.getElementById('status');
-  statusEl.innerText = hasilPG.nilai >= 75 ? '✅ LULUS PG' : '❌ BELUM LULUS PG';
+  // Update teks skor
+  if(document.getElementById('nilai')) document.getElementById('nilai').innerText = nilaiAngka;
+  if(document.getElementById('benar')) document.getElementById('benar').innerText = hasilPG.benar;
+  if(document.getElementById('total')) document.getElementById('total').innerText = hasilPG.total;
 
-  // UPDATE VISUAL LINGKARAN (Agar sesuai nilai asli)
-  const ring = document.querySelector('.ring');
-  if (ring) {
-    ring.style.background = `conic-gradient(#22c55e 0% ${hasilPG.nilai}%, rgba(255,255,255,.15) ${hasilPG.nilai}%)`;
+  // UPDATE RING SKOR SECARA DINAMIS
+  const ringElement = document.querySelector('.ring');
+  if (ringElement) {
+    // Mengubah background conic-gradient sesuai nilai
+    ringElement.style.background = `conic-gradient(#22c55e 0% ${nilaiAngka}%, rgba(255,255,255,.15) ${nilaiAngka}%)`;
+  }
+
+  // Status Lulus
+  const statusEl = document.getElementById('status');
+  if(statusEl) {
+    statusEl.innerText = nilaiAngka >= 75 ? '✅ LULUS PG' : '❌ BELUM LULUS PG';
   }
 }
 
-// 4. Update Fungsi Export PDF agar sinkron
+// Fungsi Export PDF (Sudah disamakan kuncinya)
 function exportPDF() {
   const { jsPDF } = window.jspdf;
   const doc = new jsPDF();
@@ -43,7 +47,7 @@ function exportPDF() {
   doc.text('HASIL UJIAN CBT', 20, y);
   y += 10;
 
-  // Gunakan userData, bukan user (agar tidak null)
+  // Gunakan 'userData' yang sudah diambil di atas
   doc.setFontSize(11);
   doc.text(`Nama: ${userData?.nama || '-'}`, 20, y); y += 6;
   doc.text(`Kelas: ${userData?.kelas || '-'}`, 20, y); y += 10;
