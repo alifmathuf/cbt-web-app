@@ -268,9 +268,284 @@
     "o": [
       "Peserta didik mampu menyebutkan hikmah zakat fitrah",
       "Peserta didik mampu menghafal dalil zakat fitrah",
-      "Peserta didik menunjukkan sikap syukur dan upaya menyempurnakan ibadah melalui zakat fitrah",
-      "Peserta didik mampu menuliskan rukun zakat fitrah",
-      "Peserta didik mampu menjelaskan pengertian zakat fitrah"
+      "Peserta didik menunjukkan kesadaran untuk membersihkan diri dan peduli kepada sesama melalui zakat fitrah",
+      "Peserta didik mampu menuliskan pengertian zakat fitrah",
+      "Peserta didik mampu menyebutkan waktu zakat fitrah"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam pembelajaran fikih, guru membahas peran amil zakat dalam pengumpulan dan pendistribusian zakat fitrah.\n\nPeserta didik diminta memahami tugas dan tanggung jawab amil zakat.\n\nTujuan pembelajaran ranah pengetahuan yang paling tepat adalah …",
+    "o": [
+      "Peserta didik mampu menyebutkan pengertian amil zakat",
+      "Peserta didik mampu menghafal dalil amil zakat",
+      "Peserta didik mampu menganalisis peran dan tanggung jawab amil zakat dalam pengelolaan zakat fitrah",
+      "Peserta didik mampu menuliskan contoh amil zakat",
+      "Peserta didik mampu menyebutkan jenis zakat"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Guru menekankan pentingnya kejujuran dan amanah bagi amil zakat dalam menjalankan tugasnya.\n\nTujuan pembelajaran ranah sikap yang paling tepat adalah …",
+    "o": [
+      "Peserta didik mampu menyebutkan tugas amil zakat",
+      "Peserta didik mampu menghafal dalil zakat",
+      "Peserta didik menunjukkan sikap jujur dan amanah dalam menjalankan tugas sebagai amil zakat",
+      "Peserta didik mampu menuliskan contoh zakat",
+      "Peserta didik mampu menjelaskan pengertian zakat"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam pembelajaran fikih, guru mengajak peserta didik mengevaluasi pelaksanaan zakat fitrah di lingkungan masyarakat.\n\nTujuan pembelajaran ranah keterampilan yang paling tepat adalah …",
+    "o": [
+      "Peserta didik mampu menyebutkan waktu zakat fitrah",
+      "Peserta didik mampu menghafal dalil zakat fitrah",
+      "Peserta didik mampu mengevaluasi dan memberikan rekomendasi perbaikan pelaksanaan zakat fitrah di masyarakat",
+      "Peserta didik mampu menuliskan contoh zakat fitrah",
+      "Peserta didik mampu menjelaskan hikmah zakat fitrah"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Guru memberikan tugas refleksi tentang pengalaman peserta didik atau lingkungan dalam menunaikan zakat fitrah.\n\nTujuan pembelajaran ranah sikap yang paling tepat adalah …",
+    "o": [
+      "Peserta didik mampu menyebutkan pengertian zakat fitrah",
+      "Peserta didik mampu menghafal dalil zakat fitrah",
+      "Peserta didik menunjukkan sikap peduli dan empati terhadap kaum duafa melalui zakat fitrah",
+      "Peserta didik mampu menuliskan waktu zakat fitrah",
+      "Peserta didik mampu menjelaskan syarat wajib zakat fitrah"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Pada akhir pembelajaran zakat fitrah, guru mengajak peserta didik menyimpulkan peran zakat fitrah dalam membangun solidaritas sosial.\n\nTujuan pembelajaran ranah pengetahuan yang paling tepat adalah …",
+    "o": [
+      "Peserta didik mampu menghafal hikmah zakat fitrah",
+      "Peserta didik mampu menyebutkan pengertian zakat fitrah",
+      "Peserta didik mampu menganalisis peran zakat fitrah dalam memperkuat solidaritas sosial masyarakat",
+      "Peserta didik mampu menuliskan dalil zakat fitrah",
+      "Peserta didik mampu menyebutkan waktu zakat fitrah"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Guru menjelaskan bahwa zakat mal tidak hanya terbatas pada emas dan perak, tetapi juga mencakup harta perdagangan.\n\nPeserta didik diminta memahami ketentuan zakat perdagangan agar dapat menerapkannya dengan benar.\n\nTujuan pembelajaran ranah pengetahuan yang paling tepat adalah …",
+    "o": [
+      "Peserta didik mampu menyebutkan pengertian zakat mal",
+      "Peserta didik mampu menghafal dalil zakat perdagangan",
+      "Peserta didik mampu menganalisis ketentuan zakat perdagangan berdasarkan syariat Islam",
+      "Peserta didik mampu menuliskan contoh zakat fitrah",
+      "Peserta didik mampu menyebutkan jenis-jenis zakat"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam pembelajaran fikih, guru memberikan contoh perhitungan zakat perdagangan dari sebuah usaha kecil.\n\nPeserta didik diminta melakukan perhitungan berdasarkan contoh tersebut.\n\nTujuan pembelajaran ranah keterampilan yang paling tepat adalah …",
+    "o": [
+      "Peserta didik mampu menyebutkan syarat wajib zakat",
+      "Peserta didik mampu menghafal dalil zakat perdagangan",
+      "Peserta didik mampu menghitung zakat perdagangan sesuai ketentuan yang berlaku",
+      "Peserta didik mampu menuliskan pengertian zakat perdagangan",
+      "Peserta didik mampu menjelaskan hikmah zakat"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Guru menjelaskan perbedaan pendapat ulama tentang zakat atas saham dan investasi modern.\n\nPeserta didik diminta memahami perbedaan tersebut agar bersikap bijak dalam menyikapinya.\n\nTujuan pembelajaran ranah sikap yang paling tepat adalah …",
+    "o": [
+      "Peserta didik mampu menghafal pendapat ulama",
+      "Peserta didik mampu menyebutkan jenis investasi",
+      "Peserta didik menunjukkan sikap toleran dan terbuka terhadap perbedaan pendapat ulama terkait zakat investasi",
+      "Peserta didik mampu menuliskan dalil zakat saham",
+      "Peserta didik mampu menjelaskan pengertian zakat"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam pembelajaran fikih kontemporer, guru mengajak peserta didik membahas zakat pada penghasilan digital dan ekonomi kreatif.\n\nPeserta didik diminta mengaitkan konsep zakat dengan perkembangan ekonomi modern.\n\nTujuan pembelajaran ranah pengetahuan yang paling tepat adalah …",
+    "o": [
+      "Peserta didik mampu menyebutkan jenis-jenis pekerjaan",
+      "Peserta didik mampu menghafal dalil zakat",
+      "Peserta didik mampu menganalisis penerapan zakat pada penghasilan digital dan ekonomi kreatif",
+      "Peserta didik mampu menuliskan contoh zakat fitrah",
+      "Peserta didik mampu menjelaskan pengertian zakat"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Guru memberikan tugas proyek kepada peserta didik untuk merancang simulasi pembayaran zakat dari berbagai jenis harta.\n\nTujuan pembelajaran ranah keterampilan yang paling tepat adalah …",
+    "o": [
+      "Peserta didik mampu menyebutkan jenis-jenis zakat",
+      "Peserta didik mampu menghafal dalil zakat",
+      "Peserta didik mampu merancang dan mempraktikkan simulasi pembayaran zakat dari berbagai jenis harta",
+      "Peserta didik mampu menuliskan pengertian zakat",
+      "Peserta didik mampu menjelaskan hikmah zakat"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Guru menekankan pentingnya peran zakat dalam mengurangi kesenjangan sosial.\n\nPeserta didik diminta mengaitkan materi tersebut dengan kondisi sosial di Indonesia.\n\nTujuan pembelajaran ranah sikap yang paling tepat adalah …",
+    "o": [
+      "Peserta didik mampu menyebutkan pengertian zakat",
+      "Peserta didik mampu menghafal dalil zakat",
+      "Peserta didik menunjukkan kepedulian sosial dan semangat berbagi sebagai wujud pengamalan zakat",
+      "Peserta didik mampu menuliskan jenis-jenis zakat",
+      "Peserta didik mampu menjelaskan syarat wajib zakat"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam pembelajaran fikih, guru mengajak peserta didik menganalisis kasus penyalahgunaan dana zakat.\n\nPeserta didik diminta menilai kasus tersebut dari sudut pandang hukum Islam.\n\nTujuan pembelajaran ranah pengetahuan yang paling tepat adalah …",
+    "o": [
+      "Peserta didik mampu menyebutkan tugas amil zakat",
+      "Peserta didik mampu menghafal dalil zakat",
+      "Peserta didik mampu menganalisis hukum penyalahgunaan dana zakat menurut syariat Islam",
+      "Peserta didik mampu menuliskan contoh zakat",
+      "Peserta didik mampu menjelaskan pengertian zakat"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Guru memberikan tugas refleksi kepada peserta didik terkait pentingnya transparansi dalam pengelolaan zakat.\n\nTujuan pembelajaran ranah sikap yang paling tepat adalah …",
+    "o": [
+      "Peserta didik mampu menyebutkan pengertian transparansi",
+      "Peserta didik mampu menghafal dalil zakat",
+      "Peserta didik menunjukkan sikap jujur, amanah, dan mendukung transparansi dalam pengelolaan zakat",
+      "Peserta didik mampu menuliskan contoh zakat",
+      "Peserta didik mampu menjelaskan tugas amil zakat"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam pembelajaran fikih, guru mengajak peserta didik menilai efektivitas pengelolaan zakat di lingkungan sekitar.\n\nTujuan pembelajaran ranah keterampilan yang paling tepat adalah …",
+    "o": [
+      "Peserta didik mampu menyebutkan lembaga zakat",
+      "Peserta didik mampu menghafal dalil zakat",
+      "Peserta didik mampu mengevaluasi efektivitas pengelolaan zakat dan memberikan rekomendasi perbaikan",
+      "Peserta didik mampu menuliskan jenis-jenis zakat",
+      "Peserta didik mampu menjelaskan pengertian zakat"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Pada penutup materi zakat mal, guru mengajak peserta didik menyimpulkan peran zakat dalam pembangunan ekonomi umat.\n\nTujuan pembelajaran ranah pengetahuan yang paling tepat adalah …",
+    "o": [
+      "Peserta didik mampu menghafal hikmah zakat",
+      "Peserta didik mampu menyebutkan pengertian zakat",
+      "Peserta didik mampu menganalisis peran zakat mal dalam pembangunan ekonomi umat",
+      "Peserta didik mampu menuliskan dalil zakat",
+      "Peserta didik mampu menyebutkan jenis-jenis zakat"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Guru menjelaskan bahwa zakat mal memiliki dampak jangka panjang bagi kesejahteraan umat jika dikelola secara produktif.\n\nPeserta didik diminta memahami konsep zakat produktif dalam perspektif fikih.\n\nTujuan pembelajaran ranah pengetahuan yang paling tepat adalah …",
+    "o": [
+      "Peserta didik mampu menyebutkan pengertian zakat mal",
+      "Peserta didik mampu menghafal dalil zakat",
+      "Peserta didik mampu menganalisis konsep zakat produktif dan manfaatnya bagi kesejahteraan umat",
+      "Peserta didik mampu menuliskan contoh zakat fitrah",
+      "Peserta didik mampu menyebutkan jenis-jenis zakat"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam pembelajaran fikih, guru menugaskan peserta didik untuk mengkaji praktik zakat produktif yang dilakukan oleh lembaga zakat.\n\nTujuan pembelajaran ranah keterampilan yang paling tepat adalah …",
+    "o": [
+      "Peserta didik mampu menyebutkan lembaga zakat",
+      "Peserta didik mampu menghafal dalil zakat",
+      "Peserta didik mampu mengkaji dan menyajikan hasil analisis praktik zakat produktif di lembaga zakat",
+      "Peserta didik mampu menuliskan pengertian zakat",
+      "Peserta didik mampu menjelaskan hikmah zakat"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Guru menekankan bahwa zakat merupakan sarana penyucian harta dan jiwa.\n\nPeserta didik diminta mengaitkan pemahaman tersebut dengan sikap dalam kehidupan sehari-hari.\n\nTujuan pembelajaran ranah sikap yang paling tepat adalah …",
+    "o": [
+      "Peserta didik mampu menyebutkan pengertian zakat",
+      "Peserta didik mampu menghafal dalil zakat",
+      "Peserta didik menunjukkan sikap ikhlas, bersih hati, dan bertanggung jawab dalam menunaikan zakat",
+      "Peserta didik mampu menuliskan jenis-jenis zakat",
+      "Peserta didik mampu menjelaskan syarat wajib zakat"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam pembelajaran fikih, guru mengangkat kasus seseorang yang enggan membayar zakat meskipun telah memenuhi syarat.\n\nPeserta didik diminta menilai kasus tersebut berdasarkan hukum Islam.\n\nTujuan pembelajaran ranah pengetahuan yang paling tepat adalah …",
+    "o": [
+      "Peserta didik mampu menyebutkan pengertian zakat",
+      "Peserta didik mampu menghafal dalil zakat",
+      "Peserta didik mampu menganalisis hukum orang yang enggan membayar zakat meskipun telah memenuhi syarat",
+      "Peserta didik mampu menuliskan contoh zakat",
+      "Peserta didik mampu menyebutkan syarat wajib zakat"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Guru mengajak peserta didik berdiskusi tentang peran negara dalam pengelolaan zakat.\n\nPeserta didik diminta memahami hubungan antara kebijakan negara dan hukum fikih zakat.\n\nTujuan pembelajaran ranah pengetahuan yang paling tepat adalah …",
+    "o": [
+      "Peserta didik mampu menyebutkan lembaga negara",
+      "Peserta didik mampu menghafal dalil zakat",
+      "Peserta didik mampu menganalisis peran negara dalam pengelolaan zakat menurut perspektif fikih",
+      "Peserta didik mampu menuliskan jenis-jenis zakat",
+      "Peserta didik mampu menjelaskan pengertian zakat"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam pembelajaran fikih kontemporer, guru menekankan pentingnya literasi zakat di kalangan generasi muda.\n\nTujuan pembelajaran ranah sikap yang paling tepat adalah …",
+    "o": [
+      "Peserta didik mampu menyebutkan pengertian literasi zakat",
+      "Peserta didik mampu menghafal dalil zakat",
+      "Peserta didik menunjukkan kesadaran dan kepedulian untuk memahami serta menyebarkan pengetahuan tentang zakat",
+      "Peserta didik mampu menuliskan jenis-jenis zakat",
+      "Peserta didik mampu menjelaskan hikmah zakat"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Guru memberikan tugas kepada peserta didik untuk membuat kampanye sederhana tentang pentingnya zakat.\n\nTujuan pembelajaran ranah keterampilan yang paling tepat adalah …",
+    "o": [
+      "Peserta didik mampu menyebutkan pengertian zakat",
+      "Peserta didik mampu menghafal dalil zakat",
+      "Peserta didik mampu merancang dan menyajikan kampanye edukatif tentang pentingnya zakat",
+      "Peserta didik mampu menuliskan jenis-jenis zakat",
+      "Peserta didik mampu menjelaskan syarat wajib zakat"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam pembelajaran fikih, guru menanamkan nilai tanggung jawab sosial melalui pemahaman zakat.\n\nTujuan pembelajaran ranah sikap yang paling tepat adalah …",
+    "o": [
+      "Peserta didik mampu menyebutkan pengertian tanggung jawab",
+      "Peserta didik mampu menghafal dalil zakat",
+      "Peserta didik menunjukkan sikap tanggung jawab sosial dan kepedulian terhadap kesejahteraan umat",
+      "Peserta didik mampu menuliskan contoh zakat",
+      "Peserta didik mampu menjelaskan pengertian zakat"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Guru mengajak peserta didik melakukan evaluasi menyeluruh terhadap pembelajaran zakat yang telah dipelajari.\n\nTujuan pembelajaran ranah keterampilan yang paling tepat adalah …",
+    "o": [
+      "Peserta didik mampu menyebutkan materi zakat",
+      "Peserta didik mampu menghafal dalil zakat",
+      "Peserta didik mampu mengevaluasi pemahaman dan penerapan materi zakat dalam kehidupan sehari-hari",
+      "Peserta didik mampu menuliskan jenis-jenis zakat",
+      "Peserta didik mampu menjelaskan hikmah zakat"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Pada akhir rangkaian pembelajaran fikih tentang zakat, guru mengajak peserta didik menyimpulkan makna zakat bagi kehidupan pribadi dan sosial.\n\nTujuan pembelajaran ranah pengetahuan yang paling tepat adalah …",
+    "o": [
+      "Peserta didik mampu menghafal hikmah zakat",
+      "Peserta didik mampu menyebutkan pengertian zakat",
+      "Peserta didik mampu menganalisis makna zakat bagi kehidupan pribadi dan sosial",
+      "Peserta didik mampu menuliskan dalil zakat",
+      "Peserta didik mampu menyebutkan jenis-jenis zakat"
     ],
     "a": 2
   }
