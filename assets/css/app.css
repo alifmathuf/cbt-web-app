@@ -470,24 +470,24 @@ footer {
 }
 
 /* SIMPAN */
-.case-actions .btn-save {
+.case-actions .btn-next {
   background: linear-gradient(135deg, #0f172a, #0891b2);
   color: #ffffff;
 }
 
-.case-actions .btn-save:hover {
+.case-actions .btn-next:hover {
   background: linear-gradient(135deg, #22c55e, #15803d);
   transform: translateY(-2px);
 }
 
 /* SELESAI */
-.case-actions .btn-finish {
+.case-actions .btn-selesai {
   background: linear-gradient(135deg, #22c55e, #16a34a);
   color: #ffffff;
   box-shadow: 0 10px 22px rgba(34,197,94,.4);
 }
 
-.case-actions .btn-finish:hover {
+.case-actions .btn-selesai:hover {
   background: linear-gradient(135deg, #16a34a, #15803d);
   transform: translateY(-2px);
 }
