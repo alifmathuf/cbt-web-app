@@ -49,3 +49,6 @@ if (hasilCase) {
 function kembali() {
   window.location.href = '/cbt-web-app/pages/dashboard.html';
 }
+function exportPDF() {
+  alert('Export PDF akan diaktifkan di step berikutnya');
+}
