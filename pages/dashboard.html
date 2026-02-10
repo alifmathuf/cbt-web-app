@@ -8,47 +8,66 @@
   <link rel="stylesheet" href="../assets/css/theme.css" />
   <link rel="stylesheet" href="../assets/css/app.css" />
 </head>
-<body
 
+<body>
 <main class="container">
-<h3 id="greeting" position="center"></h3>
-  <div class="card">
-    <h2 id="userInfo">Dashboard</h2>
-    <p>Silakan pilih ujian</p>
+
+  <!-- GREETING -->
+  <div class="card greeting-card">
+    <h2 id="greeting">Assalaamualaikum</h2>
+    <p id="userInfo">Peserta CBT</p>
   </div>
 
+  <!-- PILIH MAPEL -->
   <div class="card">
-    <label>Mata Pelajaran</label>
-    <select id="mapel">
-      <option value="qurdist">Qurdist</option>
-      <option value="aqidah">Aqidah</option>
-      <option value="fiqih">Fiqih</option>
-      <option value="ski">SKI</option>
-      <option value="pai">PAI</option>
-      <option value="arab">Bahasa Arab</option>
-      <option value="gkmi">GKMI</option>
-      <option value="gkra">GKRA</option>
-    </select>
+    <h3 class="section-title">Pilih Mata Pelajaran</h3>
+    <div class="mapel-grid">
+      <button class="mapel-box" onclick="pilihMapel('qurdist')">Qurdis</button>
+      <button class="mapel-box" onclick="pilihMapel('aqidah')">Aqidah</button>
+      <button class="mapel-box" onclick="pilihMapel('fiqih')">Fiqih</button>
+      <button class="mapel-box" onclick="pilihMapel('ski')">SKI</button>
+      <button class="mapel-box" onclick="pilihMapel('pai')">PAI</button>
+      <button class="mapel-box" onclick="pilihMapel('arab')">Bahasa Arab</button>
+      <button class="mapel-box" onclick="pilihMapel('gkmi')">GKMI</button>
+      <button class="mapel-box" onclick="pilihMapel('gkra')">GKRA</button>
+    </div>
   </div>
 
+  <!-- TIPE UJIAN -->
   <div class="card">
-    <label>Tipe Ujian</label><br>
-    <input type="radio" name="tipe" value="pg"> Pilihan Ganda<br>
-    <input type="radio" name="tipe" value="case"> Studi Kasus
+    <h3 class="section-title">Tipe Ujian</h3>
+    <div class="tipe-ujian">
+      <label class="tipe-box">
+        <input type="radio" name="tipe" value="pg" />
+        Pilihan Ganda
+      </label>
+      <label class="tipe-box">
+        <input type="radio" name="tipe" value="case" />
+        Studi Kasus
+      </label>
+    </div>
   </div>
 
-  <button onclick="mulaiUjian()">Mulai Ujian</button>
-<div class="card">
-  <h3>Hasil Terakhir</h3>
-  <p id="rekap">Belum ada hasil</p>
-</div>
-<button class="btn-logout" onclick="logout()">Keluar</button>
+  <!-- TOMBOL AKSI -->
+  <div class="action-buttons">
+    <button class="btn-start" onclick="mulaiUjian()">Mulai Ujian</button>
+    <button class="btn-logout" onclick="logout()">Keluar</button>
+  </div>
+
+  <!-- HASIL -->
+  <div class="card result-card">
+    <h3>Hasil Terakhir</h3>
+    <p id="rekap">Belum ada hasil</p>
+  </div>
 
 </main>
 
-<footer> © 2026 Desgned by &#x2764;&#xfe0f: <br> Koorlas SKI Batch IV 2025 UIN Jakarta</footer>
+<footer>
+  © 2026 Designed with ❤️ <br>
+  Koorlas SKI Batch IV 2025 UIN Jakarta
+</footer>
+
 <script src="../assets/js/app.js"></script>
 <script src="../assets/js/dashboard.js"></script>
-
 </body>
 </html>
