@@ -16,30 +16,41 @@
   <div class="card">
     <div style="display:flex;justify-content:space-between;align-items:center;">
       <div id="timer">30:00</div>
-      <div id="judulKasus"></div>
+      <div id="progressText">0 / 4</div>
     </div>
     <div class="progress-bar">
       <div id="progressFill"></div>
     </div>
   </div>
 
-  <!-- SOAL -->
+  <!-- KASUS -->
   <div class="card">
-    <h3 id="judulPertanyaan"></h3>
+    <h3 id="judulKasus">Studi Kasus</h3>
+    <p id="deskripsiKasus"></p>
 
-    <textarea id="jawaban"></textarea>
-    <small id="counter">0 / 150 kata</small>
+    <label>1. Deskripsi masalah / kasus nyata</label>
+    <textarea id="jawab1"></textarea>
+
+    <label>2. Upaya penyelesaian</label>
+    <textarea id="jawab2"></textarea>
+
+    <label>3. Hasil yang didapat</label>
+    <textarea id="jawab3"></textarea>
+
+    <label>4. Hikmah / pengalaman berharga</label>
+    <textarea id="jawab4"></textarea>
   </div>
 
-  <!-- NAV -->
+  <!-- NAVIGASI -->
   <div class="card">
-    <button onclick="next()">Simpan & Lanjut</button>
-    <button id="btnSelesai" onclick="selesai()" disabled>Selesai</button>
+    <button onclick="prevKasus()">Sebelumnya</button>
+    <button onclick="nextKasus()">Selanjutnya</button>
+    <button id="btnSelesai" onclick="selesaiUjian()" disabled>Selesai</button>
   </div>
 
 </main>
 
-<footer>© CBT Web App</footer>
+<footer>© 2026 Design by <br> Koorlas SKI Batch IV 2025</footer>
 
 <script src="../assets/js/exam-case.js"></script>
 </body>
