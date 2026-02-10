@@ -1,7 +1,6 @@
-
 [
   {
-    "q": "Disajikan deskripsi materi tentang karakteristik perkembangan anak. Dari materi tersebut, tujuan pembelajaran ranah sikap yang sesuai dengan indikator “peserta didik dapat meningkatkan keimanan, ketakwaan, dan akhlak mulia” adalah…",
+    "q": "Berdasarkan materi tentang karakteristik perkembangan anak, tujuan pembelajaran ranah sikap yang sesuai dengan indikator 'peserta didik dapat meningkatkan keimanan, ketakwaan, dan akhlak mulia' adalah…",
     "o": [
       "Peserta didik dapat memahami pentingnya pendidikan agama sejak dini.",
       "Peserta didik dapat membedakan antara sikap positif dan negatif dalam kehidupan sehari-hari.",
@@ -34,7 +33,7 @@
     "a": 2
   },
   {
-    "q": "Berdasarkan konsep bermain sebagai metode pembelajaran utama di PAUD, indikator tujuan pembelajaran ranah sikap yang sesuai dengan materi “peserta didik memiliki sikap penerimaan terhadap tradisi” adalah…",
+    "q": "Berdasarkan konsep bermain sebagai metode pembelajaran utama di PAUD, indikator tujuan pembelajaran ranah sikap yang sesuai dengan materi 'peserta didik memiliki sikap penerimaan terhadap tradisi' adalah…",
     "o": [
       "Peserta didik dapat menjelaskan berbagai jenis permainan tradisional.",
       "Peserta didik dapat menunjukkan sikap terbuka terhadap teman dari latar belakang budaya berbeda.",
@@ -67,7 +66,7 @@
     "a": 1
   },
   {
-    "q": "Dalam pembelajaran PjBL dengan proyek “Taman Mini Sekolahku”, analisis materi ajar yang paling tepat sesuai struktur keilmuan PAUD adalah…",
+    "q": "Dalam pembelajaran PjBL dengan proyek 'Taman Mini Sekolahku', analisis materi ajar yang paling tepat sesuai struktur keilmuan PAUD adalah…",
     "o": [
       "Fokus pada konsep sains tanaman secara teoritis.",
       "Mengintegrasikan aspek kognitif, sosial-emosional, bahasa, motorik, serta nilai agama dan moral.",
@@ -78,7 +77,7 @@
     "a": 1
   },
   {
-    "q": "Guru RA melakukan evaluasi pembelajaran dengan pendekatan Discovery Based Learning pada tema “Lingkunganku”. Evaluasi tujuan pembelajaran yang paling tepat adalah…",
+    "q": "Guru RA melakukan evaluasi pembelajaran dengan pendekatan Discovery Based Learning pada tema 'Lingkunganku'. Evaluasi tujuan pembelajaran yang paling tepat adalah…",
     "o": [
       "Menggunakan tes tertulis.",
       "Menitikberatkan pada hasil akhir kegiatan.",
@@ -111,7 +110,7 @@
     "a": 1
   },
   {
-    "q": "Disajikan pernyataan praktik pedagogi tentang pelaksanaan materi ajar secara logis dengan model pelayanan konseling. Dalam pelaksanaan materi ajar pembelajaran bahasa dengan model pelayanan konseling, alur materi ajar yang sesuai dengan evaluasi tujuan pembelajaran untuk karakteristik peserta didik adalah…",
+    "q": "Dalam pelaksanaan materi ajar pembelajaran bahasa dengan model pelayanan konseling, alur materi ajar yang sesuai dengan evaluasi tujuan pembelajaran untuk karakteristik peserta didik adalah…",
     "o": [
       "Memberikan materi bahasa secara individual tanpa melibatkan interaksi sosial.",
       "Mengintegrasikan kegiatan konseling untuk mendalami perasaan dan pola pikir peserta didik dalam memahami materi bahasa.",
@@ -122,7 +121,7 @@
     "a": 1
   },
   {
-    "q": "Disajikan pernyataan praktik pedagogi tentang pelaksanaan program Penguatan Profil Pelajar Pancasila (P5). Dalam pelaksanaan program P5, pengembangan materi ajar yang sesuai dengan tujuan pembelajaran yang mencerminkan karakteristik peserta didik adalah…",
+    "q": "Dalam pelaksanaan program P5 (Penguatan Profil Pelajar Pancasila), pengembangan materi ajar yang sesuai dengan tujuan pembelajaran yang mencerminkan karakteristik peserta didik adalah…",
     "o": [
       "Menyusun materi ajar yang hanya berfokus pada nilai akademis.",
       "Menggunakan materi ajar yang menekankan kebebasan individu tanpa nilai kolektivisme.",
@@ -133,7 +132,7 @@
     "a": 2
   },
   {
-    "q": "Disajikan pernyataan praktik pedagogi tentang pelaksanaan program Penguatan Profil Pelajar Rahmatan Lil Alamin (PPRA). Pengembangan materi ajar yang tepat untuk tujuan pembelajaran sesuai karakteristik peserta didik adalah…",
+    "q": "Dalam pelaksanaan program PPRA (Penguatan Profil Pelajar Rahmatan Lil Alamin), pengembangan materi ajar yang tepat untuk tujuan pembelajaran sesuai karakteristik peserta didik adalah…",
     "o": [
       "Materi ajar yang mengutamakan kedamaian tanpa praktik kehidupan nyata.",
       "Materi ajar yang mencakup nilai universal seperti kasih sayang, toleransi, dan saling menghormati.",
@@ -144,7 +143,7 @@
     "a": 1
   },
   {
-    "q": "Disajikan pernyataan praktik pedagogi tentang implementasi nilai moderasi beragama. Pengembangan materi ajar nilai-nilai Islam sebagai agama moderat (wasathiyah) yang tepat sesuai karakteristik peserta didik adalah…",
+    "q": "Pengembangan materi ajar nilai-nilai Islam sebagai agama moderat (wasathiyah) yang tepat sesuai karakteristik peserta didik PAUD adalah…",
     "o": [
       "Materi ajar ceramah satu arah tentang konsep wasathiyah.",
       "Materi ajar teoritis tanpa aktivitas kontekstual.",
@@ -155,7 +154,7 @@
     "a": 2
   },
   {
-    "q": "Disajikan pernyataan praktik pedagogi tentang alasan implementasi nilai moderasi beragama di PAUD. Penilaian yang tepat terhadap pengembangan materi ajar Islam sebagai agama moderat (wasathiyah) adalah…",
+    "q": "Berdasarkan alasan implementasi nilai moderasi beragama di PAUD, penilaian yang tepat terhadap pengembangan materi ajar Islam sebagai agama moderat (wasathiyah) adalah…",
     "o": [
       "Materi ajar menekankan hafalan doa dan ayat.",
       "Materi ajar berfokus pada ibadah ritual individual.",
@@ -166,7 +165,7 @@
     "a": 4
   },
   {
-    "q": "Disajikan deskripsi aktivitas guru dalam perencanaan tujuan pembelajaran dengan pendekatan Problem Based Learning (PBL). Prinsip pembelajaran berbasis perkembangan AUD yang paling tepat adalah…",
+    "q": "Dalam perencanaan tujuan pembelajaran dengan pendekatan Problem Based Learning (PBL) untuk AUD, prinsip yang paling tepat adalah…",
     "o": [
       "Tujuan pembelajaran menekankan konsep abstrak sejak dini.",
       "Tujuan pembelajaran dirancang berdasarkan struktur keilmuan yang disederhanakan dan pengalaman nyata anak sesuai tahap perkembangan.",
@@ -177,7 +176,7 @@
     "a": 1
   },
   {
-    "q": "Disajikan kasus penerapan pembelajaran dengan materi jenis-jenis permainan edukatif. Rancangan pembelajaran berpendekatan berbasis perbedaan individu yang sesuai adalah…",
+    "q": "Dalam materi jenis-jenis permainan edukatif, rancangan pembelajaran berpendekatan berbasis perbedaan individu yang sesuai adalah…",
     "o": [
       "Satu jenis permainan untuk semua anak.",
       "Kegiatan yang mengakomodasi berbagai jenis permainan sesuai minat dan tingkat perkembangan anak.",
@@ -188,7 +187,7 @@
     "a": 1
   },
   {
-    "q": "Disajikan narasi evaluasi pembelajaran dengan pendekatan Discovery Based Learning (DBL). Evaluasi tujuan pembelajaran PAUD yang paling tepat adalah…",
+    "q": "Dalam narasi evaluasi pembelajaran dengan pendekatan Discovery Based Learning (DBL), evaluasi tujuan pembelajaran PAUD yang paling tepat adalah…",
     "o": [
       "Tes tertulis objektif.",
       "Fokus pada hasil akhir kegiatan.",
@@ -199,7 +198,7 @@
     "a": 2
   },
   {
-    "q": "Disajikan kasus penerapan pembelajaran dengan materi implementasi pendidikan karakter berbantuan teknologi. Rancangan pembelajaran yang paling tepat sesuai pembelajaran mendalam adalah…",
+    "q": "Dalam materi implementasi pendidikan karakter berbantuan teknologi, rancangan pembelajaran yang paling tepat sesuai pembelajaran mendalam adalah…",
     "o": [
       "Ceramah tanpa media teknologi.",
       "Video tanpa tindak lanjut.",
@@ -210,7 +209,7 @@
     "a": 2
   },
   {
-    "q": "Disajikan kasus strategi guru menciptakan lingkungan bermain yang merangsang perkembangan anak. Rancangan pembelajaran berbasis perbedaan individu yang sesuai adalah…",
+    "q": "Strategi guru menciptakan lingkungan bermain yang merangsang perkembangan anak sesuai rancangan pembelajaran berbasis perbedaan individu adalah…",
     "o": [
       "Menggunakan berbagai strategi untuk merangsang perkembangan sosial, kognitif, dan motorik sesuai perbedaan individu.",
       "Lingkungan bermain seragam.",
@@ -221,360 +220,333 @@
     "a": 0
   },
   {
-  "q": "Disajikan kasus penerapan pembelajaran dengan materi implementasi pendidikan karakter di PAUD. Rancangan pembelajaran yang paling tepat sesuai prinsip pembelajaran mendalam adalah…",
-  "o": [
-    "Ceramah satu arah tanpa media.",
-    "Video animasi tanpa tindak lanjut kegiatan.",
-    "Pengalaman belajar bermakna melalui kegiatan bermain, refleksi, dan umpan balik sesuai tahap perkembangan anak.",
-    "Penilaian berbasis hafalan.",
-    "Teknologi hanya untuk hiburan."
-  ],
-  "a": 2
-}
-
-{
-  "q": "Disajikan kasus penerapan pembelajaran dengan materi implementasi moderasi beragama di PAUD. Rancangan pembelajaran berpendekatan TPACK yang paling tepat adalah…",
-  "o": [
-    "Penyampaian materi lisan tanpa media.",
-    "Penggunaan teknologi dominan tanpa tujuan.",
-    "Fokus aplikasi digital tanpa memperhatikan karakteristik anak.",
-    "Integrasi materi moderasi beragama, strategi pedagogis PAUD, dan teknologi secara tepat dan seimbang.",
-    "Tugas hafalan konsep moderasi beragama."
-  ],
-  "a": 3
-}
-
-{
-  "q": "Disajikan kasus penyajian materi pentingnya stimulasi sesuai tahap pertumbuhan anak usia dini yang kurang sesuai perkembangan zaman. Strategi pembelajaran berpendekatan PBL yang paling tepat adalah…",
-  "o": [
-    "Metode tradisional tanpa eksplorasi.",
-    "Proyek kolaboratif yang memungkinkan anak memecahkan masalah dan mengeksplorasi lingkungan secara langsung.",
-    "Pembelajaran hafalan tanpa eksperimen.",
-    "Materi teoritis tanpa pengalaman langsung.",
-    "Pendekatan individual tanpa kerja sama."
-  ],
-  "a": 1
-}
-
-{
-  "q": "Disajikan kasus penyajian materi aspek kognitif, sosial-emosional, bahasa, motorik, dan nilai agama PAUD yang kurang sesuai perkembangan zaman. Strategi PjBL yang paling tepat adalah…",
-  "o": [
-    "Materi hafalan tanpa eksplorasi.",
-    "Proyek kolaboratif yang mengembangkan keterampilan praktis dan nilai moral.",
-    "Ceramah tanpa partisipasi aktif.",
-    "Materi kaku dan tidak relevan.",
-    "Target akademik semata."
-  ],
-  "a": 1
-}
-
-{
-  "q": "Disajikan kasus penyajian materi pendekatan tematik/saintifik/PjBL/bermain yang kurang sesuai perkembangan zaman. Strategi DBL yang paling tepat adalah…",
-  "o": [
-    "Instruksi guru tanpa eksplorasi.",
-    "Diskusi yang mendorong partisipasi aktif anak memecahkan masalah nyata melalui bermain.",
-    "Pembelajaran monoton tanpa eksperimen.",
-    "Materi tidak relevan dengan kebutuhan anak.",
-    "Teori tanpa pengalaman praktis."
-  ],
-  "a": 1
-}
-
-{
-  "q": "Disajikan kasus penyajian materi jenis-jenis permainan edukatif yang kurang sesuai perkembangan zaman. Model pembelajaran DL yang paling tepat adalah…",
-  "o": [
-    "Pembelajaran satu arah.",
-    "Integrasi kebebasan belajar sesuai minat dan kecepatan anak.",
-    "Fokus akademik tanpa bermain.",
-    "Pembatasan pilihan permainan.",
-    "Penyeragaman gaya belajar."
-  ],
-  "a": 1
-}
-
-{
-  "q": "Disajikan narasi evaluasi pembelajaran dengan pendekatan DBL pada tema lingkungan. Analisis evaluasi tujuan pembelajaran PAUD yang paling tepat adalah…",
-  "o": [
-    "Tes tertulis objektif.",
-    "Fokus hasil akhir saja.",
-    "Evaluasi tematik dan autentik melalui observasi, catatan anekdot, dan dokumentasi karya selama bermain.",
-    "Ujian lisan terstruktur.",
-    "Penyamarataan capaian."
-  ],
-  "a": 2
-}
-
-{
-  "q": "Disajikan kasus implementasi pendidikan karakter berbantuan teknologi di PAUD. Best practice evaluasi yang berkualitas berkelanjutan adalah…",
-  "o": [
-    "Menilai hafalan nilai karakter.",
-    "Mengabaikan umpan balik anak.",
-    "Menggunakan observasi, portofolio, dan catatan anekdot untuk perencanaan kegiatan bermakna.",
-    "Menilai hasil akhir saja.",
-    "Teknologi hanya sebagai hiburan."
-  ],
-  "a": 2
-}
-
-{
-  "q": "Disajikan kasus penerapan pembelajaran moderasi beragama. Pengembangan materi ajar nilai-nilai Pancasila yang paling tepat adalah…",
-  "o": [
-    "Teori Pancasila tanpa praktik.",
-    "Materi seragam tanpa mempertimbangkan karakteristik anak.",
-    "Integrasi nilai keadilan sosial, toleransi, dan kepedulian melalui pengalaman nyata.",
-    "Hafalan sila Pancasila.",
-    "Pembatasan diskusi."
-  ],
-  "a": 2
-}
-
-{
-  "q": "Disajikan praktik guru menciptakan lingkungan bermain yang merangsang perkembangan anak. Rancangan pembelajaran berbasis perbedaan individu yang paling tepat adalah…",
-  "o": [
-    "Beragam strategi bermain untuk merangsang perkembangan sosial, kognitif, dan motorik sesuai perbedaan individu.",
-    "Lingkungan bermain seragam.",
-    "Pembatasan jenis permainan.",
-    "Teori tanpa bermain.",
-    "Akademik sebagai fokus utama."
-  ],
-  "a": 0
-},
+    "q": "Dalam materi implementasi pendidikan karakter di PAUD, rancangan pembelajaran yang paling tepat sesuai prinsip pembelajaran mendalam adalah…",
+    "o": [
+      "Ceramah satu arah tanpa media.",
+      "Video animasi tanpa tindak lanjut kegiatan.",
+      "Pengalaman belajar bermakna melalui kegiatan bermain, refleksi, dan umpan balik sesuai tahap perkembangan anak.",
+      "Penilaian berbasis hafalan.",
+      "Teknologi hanya untuk hiburan."
+    ],
+    "a": 2
+  },
   {
-  "q": "Disajikan kasus guru PAUD merancang tujuan pembelajaran berbasis Deep Learning. Tujuan pembelajaran yang paling sesuai dengan karakteristik anak usia dini adalah…",
-  "o": [
-    "Menekankan penguasaan konsep abstrak.",
-    "Mendorong pemahaman bermakna melalui pengalaman bermain yang relevan dengan kehidupan anak.",
-    "Fokus pada capaian akademik.",
-    "Menyamaratakan tujuan untuk semua anak.",
-    "Mengutamakan hafalan konsep."
-  ],
-  "a": 1
-}
-
-{
-  "q": "Disajikan kasus pengembangan materi ajar berbasis PjBL di PAUD. Materi ajar yang paling tepat adalah…",
-  "o": [
-    "Materi teori tanpa kegiatan proyek.",
-    "Materi proyek sederhana yang melibatkan eksplorasi, kolaborasi, dan refleksi.",
-    "Materi hafalan konsep.",
-    "Materi akademik terpisah dari bermain.",
-    "Materi berorientasi hasil akhir."
-  ],
-  "a": 1
-}
-
-{
-  "q": "Disajikan narasi guru melakukan asesmen pembelajaran PAUD. Prinsip asesmen yang paling tepat sesuai Kurikulum Merdeka adalah…",
-  "o": [
-    "Asesmen sumatif berbasis tes.",
-    "Asesmen autentik dan berkelanjutan melalui observasi dan dokumentasi.",
-    "Asesmen berbasis nilai akhir.",
-    "Asesmen seragam untuk semua anak.",
-    "Asesmen akademik semata."
-  ],
-  "a": 1
-}
-
-{
-  "q": "Disajikan kasus penerapan pembelajaran berbasis bermain. Indikator tujuan pembelajaran ranah keterampilan yang paling tepat adalah…",
-  "o": [
-    "Anak mampu menyebutkan aturan permainan.",
-    "Anak mampu mengekspresikan ide melalui aktivitas bermain dan karya.",
-    "Anak mampu menghafal instruksi guru.",
-    "Anak mampu menjawab pertanyaan tertulis.",
-    "Anak mampu menyebutkan konsep secara lisan."
-  ],
-  "a": 1
-}
-
-{
-  "q": "Disajikan kasus guru mengintegrasikan nilai agama dan moral dalam kegiatan bermain. Pendekatan yang paling tepat adalah…",
-  "o": [
-    "Ceramah tentang nilai moral.",
-    "Pembiasaan nilai agama dan moral melalui aktivitas bermain dan keteladanan.",
-    "Penugasan tertulis.",
-    "Hafalan doa tanpa praktik.",
-    "Evaluasi berbasis tes."
-  ],
-  "a": 1
-}
-
-{
-  "q": "Disajikan kasus pembelajaran tematik integratif di PAUD. Karakteristik pembelajaran yang tepat adalah…",
-  "o": [
-    "Materi disajikan terpisah per bidang.",
-    "Pembelajaran terintegrasi lintas aspek perkembangan melalui tema.",
-    "Fokus akademik saja.",
-    "Kegiatan satu arah.",
-    "Target capaian kognitif."
-  ],
-  "a": 1
-}
-
-{
-  "q": "Disajikan kasus guru memanfaatkan teknologi dalam pembelajaran PAUD. Prinsip pemanfaatan teknologi yang tepat adalah…",
-  "o": [
-    "Teknologi menggantikan peran guru.",
-    "Teknologi digunakan sebagai sarana pendukung pengalaman belajar bermakna.",
-    "Teknologi sebagai hiburan.",
-    "Teknologi digunakan terus-menerus.",
-    "Teknologi fokus pada hasil akhir."
-  ],
-  "a": 1
-}
-
-{
-  "q": "Disajikan kasus pengembangan Profil Pelajar Pancasila di PAUD. Kegiatan pembelajaran yang paling tepat adalah…",
-  "o": [
-    "Hafalan nilai Pancasila.",
-    "Kegiatan bermain kolaboratif yang menanamkan gotong royong dan kepedulian.",
-    "Tes tertulis.",
-    "Ceramah satu arah.",
-    "Penilaian akademik."
-  ],
-  "a": 1
-}
-
-{
-  "q": "Disajikan kasus guru melakukan refleksi pembelajaran. Tujuan refleksi dalam pembelajaran PAUD adalah…",
-  "o": [
-    "Menentukan nilai akhir.",
-    "Memperbaiki perencanaan dan strategi pembelajaran selanjutnya.",
-    "Membandingkan capaian anak.",
-    "Menyeragamkan metode.",
-    "Mengurangi kegiatan bermain."
-  ],
-  "a": 1
-}
-
-{
-  "q": "Disajikan kasus penyusunan perencanaan pembelajaran PAUD. Prinsip perencanaan yang paling tepat adalah…",
-  "o": [
-    "Berorientasi pada target akademik.",
-    "Fleksibel, kontekstual, dan sesuai tahap perkembangan anak.",
-    "Seragam untuk semua anak.",
-    "Berbasis buku teks.",
-    "Menekankan hafalan."
-  ],
-  "a": 1
-},
+    "q": "Dalam materi implementasi moderasi beragama di PAUD, rancangan pembelajaran berpendekatan TPACK yang paling tepat adalah…",
+    "o": [
+      "Penyampaian materi lisan tanpa media.",
+      "Penggunaan teknologi dominan tanpa tujuan.",
+      "Fokus aplikasi digital tanpa memperhatikan karakteristik anak.",
+      "Integrasi materi moderasi beragama, strategi pedagogis PAUD, dan teknologi secara tepat dan seimbang.",
+      "Tugas hafalan konsep moderasi beragama."
+    ],
+    "a": 3
+  },
   {
-  "q": "Disajikan kasus guru PAUD merancang pembelajaran berbasis bermain untuk menumbuhkan kreativitas anak. Tujuan pembelajaran yang paling tepat adalah…",
-  "o": [
-    "Anak mampu menghafal aturan bermain.",
-    "Anak mampu mengekspresikan ide dan imajinasi melalui aktivitas bermain.",
-    "Anak mampu menjawab pertanyaan tertulis.",
-    "Anak mampu menyebutkan definisi kreativitas.",
-    "Anak mampu mengikuti instruksi guru secara kaku."
-  ],
-  "a": 1
-}
-
-{
-  "q": "Disajikan kasus penerapan pembelajaran diferensiasi di PAUD. Strategi pembelajaran yang paling tepat adalah…",
-  "o": [
-    "Memberikan tugas yang sama untuk semua anak.",
-    "Menyediakan variasi aktivitas sesuai minat, kesiapan, dan gaya belajar anak.",
-    "Menyeragamkan target capaian.",
-    "Fokus pada kemampuan akademik.",
-    "Mengurangi kegiatan bermain."
-  ],
-  "a": 1
-}
-
-{
-  "q": "Disajikan kasus guru melakukan asesmen formatif selama kegiatan bermain. Bentuk asesmen yang paling sesuai adalah…",
-  "o": [
-    "Tes tertulis pilihan ganda.",
-    "Observasi perilaku anak dan pencatatan anekdot.",
-    "Ujian lisan terstruktur.",
-    "Penilaian berbasis nilai akhir.",
-    "Perbandingan capaian antar anak."
-  ],
-  "a": 1
-}
-
-{
-  "q": "Disajikan kasus pengembangan materi ajar nilai sosial-emosional di PAUD. Materi yang paling tepat adalah…",
-  "o": [
-    "Materi teori emosi.",
-    "Ceramah tentang sikap sosial.",
-    "Kegiatan bermain peran yang melatih empati dan kerja sama.",
-    "Latihan tertulis.",
-    "Target akademik semata."
-  ],
-  "a": 2
-}
-
-{
-  "q": "Disajikan kasus guru mengintegrasikan literasi dan numerasi dalam kegiatan bermain. Pendekatan yang paling tepat adalah…",
-  "o": [
-    "Latihan soal tertulis.",
-    "Pembelajaran terpisah antara literasi dan numerasi.",
-    "Mengintegrasikan literasi dan numerasi dalam konteks bermain dan kehidupan sehari-hari.",
-    "Fokus hafalan angka dan huruf.",
-    "Evaluasi berbasis tes."
-  ],
-  "a": 2
-}
-
-{
-  "q": "Disajikan kasus guru merancang proyek sederhana di PAUD. Karakteristik proyek yang paling tepat adalah…",
-  "o": [
-    "Proyek kompleks dan abstrak.",
-    "Proyek sederhana, kontekstual, dan bermakna bagi anak.",
-    "Proyek berorientasi hasil akhir.",
-    "Proyek individual tanpa kolaborasi.",
-    "Proyek akademik semata."
-  ],
-  "a": 1
-}
-
-{
-  "q": "Disajikan kasus pembelajaran berbasis lingkungan sekitar anak. Prinsip pembelajaran yang paling tepat adalah…",
-  "o": [
-    "Lingkungan sebagai objek hafalan.",
-    "Lingkungan sebagai sumber belajar nyata dan kontekstual.",
-    "Lingkungan diabaikan dalam pembelajaran.",
-    "Pembelajaran di kelas saja.",
-    "Fokus buku teks."
-  ],
-  "a": 1
-}
-
-{
-  "q": "Disajikan kasus guru menanamkan nilai disiplin pada anak usia dini. Pendekatan yang paling tepat adalah…",
-  "o": [
-    "Hukuman tegas.",
-    "Ceramah panjang.",
-    "Pembiasaan dan keteladanan dalam kegiatan sehari-hari.",
-    "Penugasan tertulis.",
-    "Tes sikap."
-  ],
-  "a": 2
-}
-
-{
-  "q": "Disajikan kasus pemanfaatan media pembelajaran di PAUD. Kriteria media yang paling tepat adalah…",
-  "o": [
-    "Media mahal dan canggih.",
-    "Media sesuai tahap perkembangan, aman, dan menarik bagi anak.",
-    "Media fokus akademik.",
-    "Media satu jenis.",
-    "Media tanpa interaksi."
-  ],
-  "a": 1
-}
-
-{
-  "q": "Disajikan kasus evaluasi pembelajaran PAUD secara menyeluruh. Prinsip evaluasi yang paling tepat adalah…",
-  "o": [
-    "Evaluasi berbasis tes akhir.",
-    "Evaluasi berkelanjutan, holistik, dan berpusat pada perkembangan anak.",
-    "Evaluasi seragam.",
-    "Evaluasi akademik semata.",
-    "Evaluasi untuk peringkat."
-  ],
-  "a": 1
-}
+    "q": "Strategi pembelajaran berpendekatan PBL yang paling tepat untuk materi stimulasi sesuai tahap pertumbuhan anak usia dini adalah…",
+    "o": [
+      "Metode tradisional tanpa eksplorasi.",
+      "Proyek kolaboratif yang memungkinkan anak memecahkan masalah dan mengeksplorasi lingkungan secara langsung.",
+      "Pembelajaran hafalan tanpa eksperimen.",
+      "Materi teoritis tanpa pengalaman langsung.",
+      "Pendekatan individual tanpa kerja sama."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Strategi PjBL yang paling tepat untuk materi kognitif, sosial-emosional, bahasa, dan motorik PAUD adalah…",
+    "o": [
+      "Materi hafalan tanpa eksplorasi.",
+      "Proyek kolaboratif yang mengembangkan keterampilan praktis dan nilai moral.",
+      "Ceramah tanpa partisipasi aktif.",
+      "Materi kaku dan tidak relevan.",
+      "Target akademik semata."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Strategi Discovery Based Learning (DBL) yang paling tepat untuk pendekatan tematik/saintifik adalah…",
+    "o": [
+      "Instruksi guru tanpa eksplorasi.",
+      "Diskusi yang mendorong partisipasi aktif anak memecahkan masalah nyata melalui bermain.",
+      "Pembelajaran monoton tanpa eksperimen.",
+      "Materi tidak relevan dengan kebutuhan anak.",
+      "Teori tanpa pengalaman praktis."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Model pembelajaran Deep Learning (DL) yang paling tepat untuk materi jenis-jenis permainan edukatif adalah…",
+    "o": [
+      "Pembelajaran satu arah.",
+      "Integrasi kebebasan belajar sesuai minat dan kecepatan anak.",
+      "Fokus akademik tanpa bermain.",
+      "Pembatasan pilihan permainan.",
+      "Penyeragaman gaya belajar."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Analisis evaluasi tujuan pembelajaran PAUD pada tema lingkungan dengan pendekatan DBL adalah…",
+    "o": [
+      "Tes tertulis objektif.",
+      "Fokus hasil akhir saja.",
+      "Evaluasi tematik dan autentik melalui observasi, catatan anekdot, dan dokumentasi karya selama bermain.",
+      "Ujian lisan terstruktur.",
+      "Penyamarataan capaian."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Best practice evaluasi yang berkualitas berkelanjutan dalam implementasi pendidikan karakter berbantuan teknologi di PAUD adalah…",
+    "o": [
+      "Menilai hafalan nilai karakter.",
+      "Mengabaikan umpan balik anak.",
+      "Menggunakan observasi, portofolio, dan catatan anekdot untuk perencanaan kegiatan bermakna.",
+      "Menilai hasil akhir saja.",
+      "Teknologi hanya sebagai hiburan."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Pengembangan materi ajar nilai-nilai Pancasila dalam penerapan moderasi beragama adalah…",
+    "o": [
+      "Teori Pancasila tanpa praktik.",
+      "Materi seragam tanpa mempertimbangkan karakteristik anak.",
+      "Integrasi nilai keadilan sosial, toleransi, dan kepedulian melalui pengalaman nyata.",
+      "Hafalan sila Pancasila.",
+      "Pembatasan diskusi."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Rancangan pembelajaran berbasis perbedaan individu dalam menciptakan lingkungan bermain yang merangsang perkembangan anak adalah…",
+    "o": [
+      "Beragam strategi bermain untuk merangsang perkembangan sosial, kognitif, dan motorik sesuai perbedaan individu.",
+      "Lingkungan bermain seragam.",
+      "Pembatasan jenis permainan.",
+      "Teori tanpa bermain.",
+      "Akademik sebagai fokus utama."
+    ],
+    "a": 0
+  },
+  {
+    "q": "Tujuan pembelajaran berbasis Deep Learning yang paling sesuai dengan karakteristik anak usia dini adalah…",
+    "o": [
+      "Menekankan penguasaan konsep abstrak.",
+      "Mendorong pemahaman bermakna melalui pengalaman bermain yang relevan dengan kehidupan anak.",
+      "Fokus pada capaian akademik.",
+      "Menyamaratakan tujuan untuk semua anak.",
+      "Mengutamakan hafalan konsep."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Materi ajar yang paling tepat dalam pengembangan berbasis PjBL di PAUD adalah…",
+    "o": [
+      "Materi teori tanpa kegiatan proyek.",
+      "Materi proyek sederhana yang melibatkan eksplorasi, kolaborasi, dan refleksi.",
+      "Materi hafalan konsep.",
+      "Materi akademik terpisah dari bermain.",
+      "Materi berorientasi hasil akhir."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Prinsip asesmen yang paling tepat sesuai Kurikulum Merdeka di PAUD adalah…",
+    "o": [
+      "Asesmen sumatif berbasis tes.",
+      "Asesmen autentik dan berkelanjutan melalui observasi dan dokumentasi.",
+      "Asesmen berbasis nilai akhir.",
+      "Asesmen seragam untuk semua anak.",
+      "Asesmen akademik semata."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Indikator tujuan pembelajaran ranah keterampilan yang paling tepat dalam pembelajaran berbasis bermain adalah…",
+    "o": [
+      "Anak mampu menyebutkan aturan permainan.",
+      "Anak mampu mengekspresikan ide melalui aktivitas bermain dan karya.",
+      "Anak mampu menghafal instruksi guru.",
+      "Anak mampu menjawab pertanyaan tertulis.",
+      "Anak mampu menyebutkan konsep secara lisan."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Pendekatan yang paling tepat dalam mengintegrasikan nilai agama dan moral dalam kegiatan bermain adalah…",
+    "o": [
+      "Ceramah tentang nilai moral.",
+      "Pembiasaan nilai agama dan moral melalui aktivitas bermain dan keteladanan.",
+      "Penugasan tertulis.",
+      "Hafalan doa tanpa praktik.",
+      "Evaluasi berbasis tes."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Karakteristik pembelajaran tematik integratif di PAUD yang tepat adalah…",
+    "o": [
+      "Materi disajikan terpisah per bidang.",
+      "Pembelajaran terintegrasi lintas aspek perkembangan melalui tema.",
+      "Fokus akademik saja.",
+      "Kegiatan satu arah.",
+      "Target capaian kognitif."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Prinsip pemanfaatan teknologi yang tepat dalam pembelajaran PAUD adalah…",
+    "o": [
+      "Teknologi menggantikan peran guru.",
+      "Teknologi digunakan sebagai sarana pendukung pengalaman belajar bermakna.",
+      "Teknologi sebagai hiburan.",
+      "Teknologi digunakan terus-menerus.",
+      "Teknologi fokus pada hasil akhir."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Kegiatan pembelajaran yang paling tepat untuk pengembangan Profil Pelajar Pancasila di PAUD adalah…",
+    "o": [
+      "Hafalan nilai Pancasila.",
+      "Kegiatan bermain kolaboratif yang menanamkan gotong royong dan kepedulian.",
+      "Tes tertulis.",
+      "Ceramah satu arah.",
+      "Penilaian akademik."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Tujuan refleksi dalam pembelajaran PAUD bagi guru adalah…",
+    "o": [
+      "Menentukan nilai akhir.",
+      "Memperbaiki perencanaan dan strategi pembelajaran selanjutnya.",
+      "Membandingkan capaian anak.",
+      "Menyeragamkan metode.",
+      "Mengurangi kegiatan bermain."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Prinsip perencanaan pembelajaran PAUD yang paling tepat adalah…",
+    "o": [
+      "Berorientasi pada target akademik.",
+      "Fleksibel, kontekstual, dan sesuai tahap perkembangan anak.",
+      "Seragam untuk semua anak.",
+      "Berbasis buku teks.",
+      "Menekankan hafalan."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Tujuan pembelajaran yang paling tepat untuk menumbuhkan kreativitas anak melalui bermain adalah…",
+    "o": [
+      "Anak mampu menghafal aturan bermain.",
+      "Anak mampu mengekspresikan ide dan imajinasi melalui aktivitas bermain.",
+      "Anak mampu menjawab pertanyaan tertulis.",
+      "Anak mampu menyebutkan definisi kreativitas.",
+      "Anak mampu mengikuti instruksi guru secara kaku."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Strategi pembelajaran diferensiasi di PAUD yang paling tepat adalah…",
+    "o": [
+      "Memberikan tugas yang sama untuk semua anak.",
+      "Menyediakan variasi aktivitas sesuai minat, kesiapan, dan gaya belajar anak.",
+      "Menyeragamkan target capaian.",
+      "Fokus pada kemampuan akademik.",
+      "Mengurangi kegiatan bermain."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Bentuk asesmen formatif yang paling sesuai selama kegiatan bermain adalah…",
+    "o": [
+      "Tes tertulis pilihan ganda.",
+      "Observasi perilaku anak dan pencatatan anekdot.",
+      "Ujian lisan terstruktur.",
+      "Penilaian berbasis nilai akhir.",
+      "Perbandingan capaian antar anak."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Materi yang paling tepat untuk pengembangan nilai sosial-emosional di PAUD adalah…",
+    "o": [
+      "Materi teori emosi.",
+      "Ceramah tentang sikap sosial.",
+      "Kegiatan bermain peran yang melatih empati dan kerja sama.",
+      "Latihan tertulis.",
+      "Target akademik semata."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Pendekatan yang paling tepat dalam mengintegrasikan literasi dan numerasi di PAUD adalah…",
+    "o": [
+      "Latihan soal tertulis.",
+      "Pembelajaran terpisah antara literasi dan numerasi.",
+      "Mengintegrasikan literasi dan numerasi dalam konteks bermain dan kehidupan sehari-hari.",
+      "Fokus hafalan angka dan huruf.",
+      "Evaluasi berbasis tes."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Karakteristik proyek sederhana yang paling tepat di PAUD adalah…",
+    "o": [
+      "Proyek kompleks dan abstrak.",
+      "Proyek sederhana, kontekstual, dan bermakna bagi anak.",
+      "Proyek berorientasi hasil akhir.",
+      "Proyek individual tanpa kolaborasi.",
+      "Proyek akademik semata."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Prinsip pembelajaran berbasis lingkungan sekitar anak adalah…",
+    "o": [
+      "Lingkungan sebagai objek hafalan.",
+      "Lingkungan sebagai sumber belajar nyata dan kontekstual.",
+      "Lingkungan diabaikan dalam pembelajaran.",
+      "Pembelajaran di kelas saja.",
+      "Fokus buku teks."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Pendekatan yang paling tepat untuk menanamkan nilai disiplin pada anak usia dini adalah…",
+    "o": [
+      "Hukuman tegas.",
+      "Ceramah panjang.",
+      "Pembiasaan dan keteladanan dalam kegiatan sehari-hari.",
+      "Penugasan tertulis.",
+      "Tes sikap."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Kriteria media pembelajaran yang paling tepat di PAUD adalah…",
+    "o": [
+      "Media mahal dan canggih.",
+      "Media sesuai tahap perkembangan, aman, dan menarik bagi anak.",
+      "Media fokus akademik.",
+      "Media satu jenis.",
+      "Media tanpa interaksi."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Prinsip evaluasi pembelajaran PAUD secara menyeluruh yang paling tepat adalah…",
+    "o": [
+      "Evaluasi berbasis tes akhir.",
+      "Evaluasi berkelanjutan, holistik, dan berpusat pada perkembangan anak.",
+      "Evaluasi seragam.",
+      "Evaluasi akademik semata.",
+      "Evaluasi untuk peringkat."
+    ],
+    "a": 1
+  }
 ]
