@@ -12,47 +12,32 @@
 
 <main class="container">
 
-<div class="result-title-wrap">
-  <span class="result-title">HASIL UJIAN</span>
-  
-</div>
-
-
-  <div class="score-ring">
-    <div class="ring">
-      <div class="score">78</div>
-      <small>Nilai</small>
-    </div>
+  <div class="card" style="text-align:center">
+    <h2>Hasil Ujian</h2>
+    <p id="namaPeserta">-</p>
   </div>
 
- <div class="result-actions">
-  <button class="btn-result btn-back" onclick="kembali()">
-    Kembali ke Dashboard
-  </button>
+  <div class="card">
+    <canvas id="chartNilai"></canvas>
+  </div>
 
-  <button class="btn-result btn-export" onclick="exportPDF()">
-    Export PDF
-  </button>
-</div>
-
-</div>
-<div class="card">
-  <h2 id="namaPeserta">-</h2>
-  <p>Pilihan Ganda</p>
-  <p>Jawaban Benar: 0</p>
-  <p>Total Soal: 0</p>
-  <p>Nilai: 0</p>
-  <p id="status"></p>
+  <div class="card">
+    <p>Jawaban Benar: <b id="benar">0</b></p>
+    <p>Total Soal: <b id="total">0</b></p>
+    <p>Nilai: <b id="nilai">0</b></p>
+    <p id="status"></p>
   </div>
 <div id="caseResult"></div>
 
   <div class="card">
-</div>
+    <button onclick="kembali()">Kembali ke Dashboard</button>
+    <button onclick="exportPDF()">Export PDF</button>
 
+  </div>
 
 </main>
 
-<footer> © 2026 Desgned by &#x2764;&#xfe0f: <br> Koorlas SKI Batch IV 2025 UIN SYAHID Jakarta</footer>
+<footer> ©2026 Desgned by &#x2764;&#xfe0f: <br> Koorlas SKI Batch IV 2025</footer>
 
 <!-- URUTAN SCRIPT PENTING -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
