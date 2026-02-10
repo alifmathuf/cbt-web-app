@@ -8,6 +8,10 @@ if (!user) {
 document.getElementById('userInfo').innerText =
   `Halo, ${user.nama} (${user.kelas})`;
 
+function pilihMapel(mapel) {
+  localStorage.setItem('mapel', mapel);
+}
+
 function mulaiUjian() {
   const mapel = document.getElementById('mapel').value;
   const tipe = document.querySelector('input[name="tipe"]:checked');
