@@ -34,17 +34,28 @@ if (hasilPG) {
   });
 }
 
-// ===== STUDI KASUS =====
+// ===== STUDI KASUS (RINGKAS) =====
 if (hasilCase) {
-  const div = document.createElement('div');
-  div.className = 'card';
-  div.innerHTML = `
-    <h3>Studi Kasus</h3>
-    <p><b>Jenis:</b> ${hasilCase.jenis}</p>
-    <p>Jawaban berhasil disimpan.</p>
+  const wrap = document.getElementById('caseResult');
+
+  let totalKata = 0;
+  let totalKarakter = 0;
+
+  hasilCase.jawaban.forEach(teks => {
+    totalKarakter += teks.length;
+    totalKata += teks.trim().split(/\s+/).filter(Boolean).length;
+  });
+
+  wrap.innerHTML = `
+    <div class="card">
+      <h3>Hasil Studi Kasus</h3>
+      <p><b>Jenis:</b> ${hasilCase.jenis}</p>
+      <p><b>Total Kata:</b> ${totalKata}</p>
+      <p><b>Total Karakter:</b> ${totalKarakter}</p>
+    </div>
   `;
-  document.querySelector('.container').appendChild(div);
 }
+
 
 function kembali() {
   window.location.href = '/cbt-web-app/pages/dashboard.html';
