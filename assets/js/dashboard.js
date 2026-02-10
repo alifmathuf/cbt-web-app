@@ -48,12 +48,6 @@ function pilihMapel(mapel) {
   if (activeBtn) activeBtn.classList.add('active');
 }
 
-function pilihPaket(paket) {
-  localStorage.setItem("paket", paket);
-  window.location.href = "exam-pg.html";
-}
-
-
 /* =========================
    MULAI UJIAN
 ========================= */
