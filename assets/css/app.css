@@ -16,7 +16,7 @@ body {
 }
 
 /* =========================
-   LOGIN PAGE
+   LOGIN PAGE (TETAP WARNA ASLI)
 ========================= */
 .login-page {
   min-height: 100vh;
@@ -37,14 +37,13 @@ body {
   text-align: center;
 }
 
-
 .login-card h1 {
   margin-bottom: 6px;
-  color: var(--text-dark);
+  color: #ffffff;
 }
 
 .login-card p {
-  color: #475569;
+  color: #cbd5f5;
   margin-bottom: 18px;
 }
 
@@ -53,7 +52,7 @@ body {
   padding: 14px;
   margin: 10px 0;
   border-radius: 12px;
-  border: 1px solid #e5e7eb;
+  border: none;
 }
 
 .login-card button {
@@ -70,7 +69,7 @@ body {
 }
 
 .login-card button:hover {
-  opacity: .9;
+  background: linear-gradient(135deg, #22c55e, #15803d);
 }
 
 /* =========================
@@ -84,12 +83,12 @@ body {
 }
 
 .card {
-  background: var(--card);
-  color: var(--text-dark);
-  box-shadow: var(--card-shadow);
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
   padding: 22px;
   border-radius: 20px;
   margin-bottom: 20px;
+  box-shadow: 0 12px 30px rgba(0,0,0,.25);
   animation: fadeIn .4s ease;
 }
 
@@ -102,12 +101,13 @@ body {
 
 #greeting {
   margin: 0;
-  font-size: 24px;
+  font-size: 26px;
+  font-weight: 700;
 }
 
 #userInfo {
   margin-top: 6px;
-  color: #475569;
+  color: #cbd5f5;
 }
 
 /* =========================
@@ -125,16 +125,20 @@ body {
   font-size: 16px;
   font-weight: 600;
   border-radius: 16px;
-  background: rgba(255,255,255,0.85);
-  border: 1px solid rgba(15,23,42,0.15);
+  background: linear-gradient(135deg, #0f172a, #0891b2);
+  color: #ffffff;
   cursor: pointer;
   transition: .25s ease;
+  text-align: center;
 }
 
 .mapel-box:hover {
-  background: linear-gradient(135deg, #0f172a, #0891b2);
-  color: #ffffff;
-  transform: translateY(-4px);
+  background: linear-gradient(135deg, #22c55e, #15803d);
+  transform: translateY(-3px);
+}
+
+.mapel-box.active {
+  background: linear-gradient(135deg, #16a34a, #15803d);
 }
 
 /* =========================
@@ -152,8 +156,8 @@ body {
   text-align: center;
   padding: 16px;
   border-radius: 16px;
-  background: rgba(255,255,255,0.85);
-  border: 1px solid rgba(15,23,42,0.15);
+  background: linear-gradient(135deg, #0f172a, #0891b2);
+  color: #ffffff;
   cursor: pointer;
   font-weight: 600;
   transition: .25s ease;
@@ -163,11 +167,12 @@ body {
   display: none;
 }
 
-.tipe-box:hover,
+.tipe-box:hover {
+  background: linear-gradient(135deg, #22c55e, #15803d);
+}
+
 .tipe-box:has(input:checked) {
-  background: linear-gradient(135deg, #0f172a, #0891b2);
-  color: #ffffff;
-  border-color: transparent;
+  background: linear-gradient(135deg, #16a34a, #15803d);
 }
 
 /* =========================
@@ -181,10 +186,10 @@ body {
 }
 
 .btn-start {
-  padding: 14px 32px;
+  padding: 14px 36px;
   border-radius: 18px;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   background: linear-gradient(135deg, #22c55e, #16a34a);
   color: #ffffff;
   border: none;
@@ -192,32 +197,14 @@ body {
 }
 
 .btn-logout {
-  padding: 14px 32px;
+  padding: 14px 36px;
   border-radius: 18px;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   background: linear-gradient(135deg, #ef4444, #dc2626);
   color: #ffffff;
   border: none;
   cursor: pointer;
-}
-
-/* =========================
-   PROGRESS BAR
-========================= */
-.progress-bar {
-  width: 100%;
-  height: 10px;
-  background: #e5e7eb;
-  border-radius: 20px;
-  margin-top: 10px;
-}
-
-#progressFill {
-  height: 100%;
-  width: 0%;
-  background: linear-gradient(90deg, #22d3ee, #0891b2);
-  border-radius: 20px;
 }
 
 /* =========================
@@ -288,8 +275,4 @@ footer {
   .action-buttons {
     flex-direction: column;
   }
-}
-.mapel-box.active {
-  background: linear-gradient(135deg, #0f172a, #0891b2);
-  color: #ffffff;
 }
