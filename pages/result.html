@@ -14,32 +14,30 @@
 
   <div class="card" style="text-align:center">
     <h2>Hasil Ujian</h2>
-    <p id="namaPeserta">-</p>
+    <p id="namaPeserta"></p>
   </div>
 
   <div class="card">
-    <canvas id="chartNilai"></canvas>
+    <canvas id="chartNilai" height="200"></canvas>
   </div>
 
   <div class="card">
-    <p>Jawaban Benar: <b id="benar">0</b></p>
-    <p>Total Soal: <b id="total">0</b></p>
-    <p>Nilai: <b id="nilai">0</b></p>
+    <p><b>Jawaban Benar:</b> <span id="benar"></span></p>
+    <p><b>Total Soal:</b> <span id="total"></span></p>
+    <p><b>Nilai:</b> <span id="nilai"></span></p>
     <p id="status"></p>
   </div>
-<div id="caseResult"></div>
+
   <div class="card">
     <button onclick="kembali()">Kembali ke Dashboard</button>
-    <button onclick="exportPDF()">Export PDF</button>
   </div>
 
 </main>
 
 <footer>© CBT Web App</footer>
 
-<!-- URUTAN SCRIPT PENTING -->
+<!-- CHART.JS CDN -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <script src="../assets/js/result.js"></script>
 </body>
 </html>
