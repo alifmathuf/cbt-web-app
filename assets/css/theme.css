@@ -1,15 +1,25 @@
 :root {
-  --bg: #f4f6fb;
-  --card: #ffffff;
-  --text: #1f2937;
-  --primary: #2563eb;
-  --border: #e5e7eb;
-}
+  /* === BACKGROUND GRADIENT === */
+  --bg: linear-gradient(
+    135deg,
+    #0f172a 0%,   /* navy gelap */
+    #0b3c5d 45%,  /* navy */
+    #0891b2 100%  /* tosca */
+  );
 
-body.dark {
-  --bg: #0f172a;
-  --card: #1e293b;
-  --text: #e5e7eb;
-  --primary: #60a5fa;
-  --border: #334155;
+  /* === CARD === */
+  --card: rgba(255, 255, 255, 0.08);
+  --card-soft: rgba(255, 255, 255, 0.12);
+
+  /* === TEXT === */
+  --text: #f1f5f9;
+  --text-soft: #cbd5e1;
+
+  /* === ACCENT === */
+  --primary: #22d3ee;   /* tosca terang */
+  --success: #22c55e;   /* hijau */
+  --danger: #ef4444;    /* merah */
+
+  /* === BORDER === */
+  --border: rgba(255,255,255,0.18);
 }
