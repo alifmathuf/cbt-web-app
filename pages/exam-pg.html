@@ -31,12 +31,15 @@
     <div id="opsi"></div>
   </div>
 
-  <!-- NAVIGASI -->
-  <div class="card">
-    <button onclick="prevSoal()">Sebelumnya</button>
-    <button onclick="nextSoal()">Selanjutnya</button>
-    <button id="btnSelesai" onclick="selesaiUjian()" disabled>Selesai</button>
-  </div>
+ <!-- NAVIGASI -->
+<div class="card nav-soal">
+  <button class="btn-nav" onclick="prevSoal()">Sebelumnya</button>
+  <button class="btn-nav" onclick="nextSoal()">Selanjutnya</button>
+  <button id="btnSelesai" class="btn-finish" onclick="selesaiUjian()" disabled>
+    Selesai
+  </button>
+</div>
+
 
   <!-- GRID NOMOR -->
   <div class="card soal-grid" id="soalGrid"></div>
