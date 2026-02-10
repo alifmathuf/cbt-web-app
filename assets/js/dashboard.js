@@ -1,7 +1,8 @@
 const user = JSON.parse(localStorage.getItem('cbtUser'));
 
 if (!user) {
-  window.location.href = '../index.html';
+  // ABSOLUTE PATH (AMAN GITHUB PAGES)
+  window.location.href = '/cbt-web-app/index.html';
 }
 
 document.getElementById('userInfo').innerText =
@@ -19,8 +20,8 @@ function mulaiUjian() {
   localStorage.setItem('mapel', mapel);
 
   if (tipe.value === 'pg') {
-    window.location.href = './exam-pg.html';
+    window.location.href = '/cbt-web-app/pages/exam-pg.html';
   } else {
-    window.location.href = './exam-case.html';
+    window.location.href = '/cbt-web-app/pages/exam-case.html';
   }
 }
