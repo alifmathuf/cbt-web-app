@@ -462,13 +462,20 @@ footer {
   background: linear-gradient(135deg, #22c55e, #16a34a);
   transform: translateY(-2px);
 }
-/* ===== RESULT CHART ===== */
-.chart-card {
-  max-width: 420px;
-  margin: 0 auto;
+/* =========================
+   RESULT CHART FIX SIZE
+========================= */
+.chart-wrapper {
+  width: 100%;
+  max-width: 360px;   /* 🔥 batas keras */
+  height: 260px;      /* 🔥 chart ikut ini */
+  margin: 0 auto 20px;
+  position: relative;
 }
 
-.chart-card canvas {
-  height: 260px !important;
+.chart-wrapper canvas {
+  width: 100% !important;
+  height: 100% !important;
 }
+
 
