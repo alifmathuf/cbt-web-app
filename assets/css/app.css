@@ -5,14 +5,6 @@
 body {
   background: var(--bg);
   color: var(--text);
-}
-.card {
-  background: var(--card);
-  backdrop-filter: blur(12px);
-}
-
-
-body {
   margin: 0;
   min-height: 100vh;
   background: var(--bg);
@@ -94,6 +86,8 @@ body {
 }
 
 .card {
+  background: var(--card);
+  backdrop-filter: blur(12px);
   background: var(--card);
   backdrop-filter: blur(10px);
   border-radius: 18px;
