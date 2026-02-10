@@ -388,3 +388,48 @@ footer {
     padding: 12px 20px;
   }
 }
+
+/* =========================
+   RESULT ACTION BUTTONS
+========================= */
+.result-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 32px 0;
+  flex-wrap: wrap;
+}
+
+.result-actions .btn-result {
+  min-width: 200px;
+  padding: 18px 42px;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: all .25s ease;
+}
+
+/* Kembali ke Dashboard */
+.result-actions .btn-back {
+  background: linear-gradient(135deg, #0f172a, #0891b2);
+  color: #ffffff;
+}
+
+.result-actions .btn-back:hover {
+  background: linear-gradient(135deg, #22c55e, #15803d);
+  transform: translateY(-2px);
+}
+
+/* Export PDF */
+.result-actions .btn-export {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: #ffffff;
+}
+
+.result-actions .btn-export:hover {
+  background: linear-gradient(135deg, #16a34a, #15803d);
+  transform: translateY(-2px);
+}
+
