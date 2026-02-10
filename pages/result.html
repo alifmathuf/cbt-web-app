@@ -14,17 +14,17 @@
 
   <div class="card" style="text-align:center">
     <h2>Hasil Ujian</h2>
-    <p id="namaPeserta"></p>
+    <p id="namaPeserta">-</p>
   </div>
 
   <div class="card">
-    <canvas id="chartNilai" height="200"></canvas>
+    <canvas id="chartNilai"></canvas>
   </div>
 
   <div class="card">
-    <p><b>Jawaban Benar:</b> <span id="benar"></span></p>
-    <p><b>Total Soal:</b> <span id="total"></span></p>
-    <p><b>Nilai:</b> <span id="nilai"></span></p>
+    <p>Jawaban Benar: <b id="benar">0</b></p>
+    <p>Total Soal: <b id="total">0</b></p>
+    <p>Nilai: <b id="nilai">0</b></p>
     <p id="status"></p>
   </div>
 
@@ -36,7 +36,7 @@
 
 <footer>© CBT Web App</footer>
 
-<!-- CHART.JS CDN -->
+<!-- URUTAN SCRIPT PENTING -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="../assets/js/result.js"></script>
 </body>
