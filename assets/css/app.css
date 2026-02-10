@@ -1,15 +1,23 @@
+/* =========================
+   RESET & GLOBAL
+========================= */
 * {
   box-sizing: border-box;
-  font-family: system-ui, -apple-system, sans-serif;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 }
 
 body {
   margin: 0;
-  background: var(--bg);
-  color: var(--text);
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #134e6f, #0891b2);
+  color: #e5e7eb;
+  display: flex;
+  flex-direction: column;
 }
 
-/* LOGIN */
+/* =========================
+   LOGIN PAGE
+========================= */
 .login-page {
   min-height: 100vh;
   display: flex;
@@ -20,122 +28,249 @@ body {
 .login-card {
   width: 100%;
   max-width: 360px;
-  background: var(--card);
-  padding: 24px;
-  border-radius: 14px;
-  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(10px);
+  padding: 26px;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0,0,0,.35);
   text-align: center;
+}
+
+.login-card h1 {
+  margin-bottom: 6px;
+}
+
+.login-card p {
+  opacity: .85;
+  margin-bottom: 16px;
 }
 
 .login-card input {
   width: 100%;
-  padding: 12px;
+  padding: 12px 14px;
   margin: 10px 0;
+  border-radius: 10px;
+  border: none;
+  outline: none;
 }
 
 .login-card button {
   width: 100%;
   padding: 12px;
-  background: var(--primary);
-  color: #fff;
-  border: none;
-  border-radius: 10px;
+  margin-top: 10px;
+  background: rgba(255,255,255,0.25);
+  color: #ffffff;
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .25s ease;
 }
 
-/* GENERAL */
+.login-card button:hover {
+  background: rgba(255,255,255,0.4);
+}
+
+/* =========================
+   CONTAINER & CARD
+========================= */
 .container {
   max-width: 1100px;
   margin: auto;
   padding: 16px;
+  width: 100%;
 }
 
 .card {
-  background: var(--card);
-  padding: 16px;
-  border-radius: 14px;
-  margin-bottom: 12px;
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(8px);
+  padding: 18px;
+  border-radius: 18px;
+  margin-bottom: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,.25);
+  animation: fadeIn .4s ease;
 }
 
-/* PROGRESS BAR */
+/* =========================
+   DASHBOARD MAPEL
+========================= */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 14px;
+}
+
+.mapel {
+  text-align: center;
+  padding: 14px;
+  font-weight: 600;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.18);
+  cursor: pointer;
+  transition: .25s ease;
+}
+
+.mapel:hover {
+  background: rgba(34,211,238,0.35);
+  transform: translateY(-4px);
+}
+
+/* =========================
+   PROGRESS BAR
+========================= */
 .progress-bar {
   width: 100%;
   height: 10px;
-  background: var(--border);
-  border-radius: 10px;
-  margin-top: 8px;
+  background: rgba(255,255,255,0.25);
+  border-radius: 20px;
+  margin-top: 10px;
 }
 
 #progressFill {
   height: 100%;
   width: 0%;
-  background: var(--primary);
-  border-radius: 10px;
+  background: linear-gradient(90deg, #22d3ee, #0891b2);
+  border-radius: 20px;
+  transition: width .3s ease;
 }
 
-/* OPSI */
+/* =========================
+   SOAL & OPSI JAWABAN
+========================= */
+.soal-box,
+.card.soal {
+  background: rgba(255,255,255,0.92);
+  color: #0f172a;
+  border-radius: 18px;
+  padding: 18px;
+}
+
 #opsi label {
-  display: block;
-  padding: 10px;
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255,255,255,0.95);
+  color: #0f172a;
+  padding: 14px;
+  border-radius: 14px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: .25s ease;
+  border: 1px solid rgba(0,0,0,.08);
 }
 
-/* GRID SOAL */
+#opsi label:hover {
+  background: rgba(34,211,238,0.15);
+}
+
+#opsi input[type="radio"] {
+  accent-color: #0891b2;
+}
+
+#opsi label:has(input:checked) {
+  background: linear-gradient(135deg, #0f172a, #0891b2);
+  color: #ffffff;
+  border-color: transparent;
+}
+
+/* =========================
+   NAVIGASI SOAL (TENGAH)
+========================= */
+.nav-soal {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin: 20px 0;
+}
+
+.nav-soal button {
+  padding: 12px 26px;
+  border-radius: 14px;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: .25s ease;
+}
+
+/* Sebelumnya & Selanjutnya */
+.nav-soal .btn-nav {
+  background: rgba(255,255,255,0.85);
+  color: #0f172a;
+}
+
+.nav-soal .btn-nav:hover {
+  background: rgba(34,211,238,0.35);
+}
+
+/* Tombol Selesai */
+.nav-soal .btn-finish {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: #ffffff;
+}
+
+.nav-soal .btn-finish:hover {
+  opacity: .9;
+}
+
+/* =========================
+   GRID NOMOR SOAL
+========================= */
 .soal-grid {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  gap: 6px;
+  gap: 8px;
 }
 
 .soal-grid button {
-  padding: 8px;
-  border-radius: 8px;
+  padding: 10px;
+  border-radius: 12px;
   border: none;
-  background: #d1d5db;
+  font-weight: 600;
+  background: rgba(255,255,255,0.85);
+  color: #0f172a;
 }
 
 .soal-grid button.answered {
-  background: #22c55e;
+  background: linear-gradient(135deg, #22c55e, #16a34a);
   color: white;
 }
 
-
-footer {
-  text-align: center;
-  padding: 12px;
-  font-size: 13px;
-  opacity: .6;
-}
+/* =========================
+   TEXTAREA STUDI KASUS
+========================= */
 textarea {
   width: 100%;
   min-height: 120px;
-  padding: 10px;
-  margin-bottom: 12px;
-  border-radius: 10px;
-  border: 1px solid var(--border);
+  padding: 12px;
+  border-radius: 14px;
+  border: 1px solid rgba(0,0,0,.15);
   resize: vertical;
 }
 
 textarea:focus {
   outline: none;
-  border-color: var(--primary);
+  border-color: #0891b2;
 }
 
-@media (max-width: 600px) {
-  textarea {
-    min-height: 100px;
-  }
-}
-/* ANIMASI HALUS */
-.card {
-  animation: fadeIn .4s ease;
+/* =========================
+   FOOTER
+========================= */
+footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 14px;
+  font-size: 13px;
+  opacity: .75;
 }
 
+/* =========================
+   ANIMASI
+========================= */
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(6px);
+    transform: translateY(8px);
   }
   to {
     opacity: 1;
@@ -143,12 +278,15 @@ textarea:focus {
   }
 }
 
-/* BUTTON HOVER */
-button:hover {
-  opacity: .9;
-}
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 600px) {
+  .soal-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
 
-/* IKON MINI (EMOJI BASED) */
-button {
-  cursor: pointer;
+  .nav-soal button {
+    padding: 12px 20px;
+  }
 }
