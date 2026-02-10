@@ -127,4 +127,29 @@ textarea:focus {
     min-height: 100px;
   }
 }
+/* ANIMASI HALUS */
+.card {
+  animation: fadeIn .4s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* BUTTON HOVER */
+button:hover {
+  opacity: .9;
+}
+
+/* IKON MINI (EMOJI BASED) */
+button {
+  cursor: pointer;
+}
 
