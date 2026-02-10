@@ -1,146 +1,152 @@
 /* ===============================
    CONFIG
 ================================ */
-const DURASI = 30 * 60;
+const DURASI = 30 * 60; // 30 menit
 const MIN_KATA = 150;
 
 /* ===============================
-   DATA STUDI KASUS (ACAK 1)
+   DATA KASUS (4 MACAM)
 ================================ */
-const semuaKasus = [
+const kasus = [
   {
-    nama: 'Strategi Pembelajaran',
-    pertanyaan: [
-      'Deskripsi masalah/kasus nyata',
-      'Upaya penyelesaian',
-      'Hasil yang didapat',
-      'Hikmah/pengalaman berharga'
-    ]
+    judul: 'Kasus Media Pembelajaran',
+    desc: 'Jelaskan kasus nyata terkait penggunaan media pembelajaran di kelas.'
   },
   {
-    nama: 'Media Pembelajaran',
-    pertanyaan: [
-      'Deskripsi masalah/kasus nyata',
-      'Upaya penyelesaian',
-      'Hasil yang didapat',
-      'Hikmah/pengalaman berharga'
-    ]
+    judul: 'Kasus Strategi Pembelajaran',
+    desc: 'Jelaskan kasus nyata terkait strategi pembelajaran yang diterapkan.'
   },
   {
-    nama: 'LKPD',
-    pertanyaan: [
-      'Deskripsi masalah/kasus nyata',
-      'Upaya penyelesaian',
-      'Hasil yang didapat',
-      'Hikmah/pengalaman berharga'
-    ]
+    judul: 'Kasus LKPD',
+    desc: 'Jelaskan kasus nyata terkait penyusunan atau penggunaan LKPD.'
   },
   {
-    nama: 'Penilaian',
-    pertanyaan: [
-      'Deskripsi masalah/kasus nyata',
-      'Upaya penyelesaian',
-      'Hasil yang didapat',
-      'Hikmah/pengalaman berharga'
-    ]
+    judul: 'Kasus Penilaian',
+    desc: 'Jelaskan kasus nyata terkait sistem penilaian pembelajaran.'
   }
 ];
-
-// PILIH 1 KASUS ACAK
-const kasus = semuaKasus[Math.floor(Math.random() * semuaKasus.length)];
 
 /* ===============================
    STATE
 ================================ */
-let step = 0;
+let index = 0;
 let waktu = DURASI;
-let jawaban = ['', '', '', ''];
+let jawaban = Array(4).fill(null).map(() => ({
+  j1: '', j2: '', j3: '', j4: ''
+}));
 
 /* ===============================
    TIMER
 ================================ */
 setInterval(() => {
   waktu--;
-  if (waktu <= 0) selesai(true);
+  if (waktu <= 0) selesaiUjian(true);
 
   const m = String(Math.floor(waktu / 60)).padStart(2, '0');
   const s = String(waktu % 60).padStart(2, '0');
-  timer.innerText = `${m}:${s}`;
+  document.getElementById('timer').innerText = `${m}:${s}`;
 }, 1000);
 
 /* ===============================
    RENDER
 ================================ */
 function render() {
-  judulKasus.innerText = `Studi Kasus: ${kasus.nama}`;
-  judulPertanyaan.innerText =
-    `(${step + 1}/4) ${kasus.pertanyaan[step]}`;
+  const k = kasus[index];
 
-  jawabanEl.value = jawaban[step];
-  updateCounter();
+  document.getElementById('judulKasus').innerText =
+    `${k.judul} (${index + 1}/4)`;
+
+  document.getElementById('deskripsiKasus').innerText = k.desc;
+
+  document.getElementById('jawab1').value = jawaban[index].j1;
+  document.getElementById('jawab2').value = jawaban[index].j2;
+  document.getElementById('jawab3').value = jawaban[index].j3;
+  document.getElementById('jawab4').value = jawaban[index].j4;
+
   updateProgress();
 }
-
-const jawabanEl = document.getElementById('jawaban');
-const counter = document.getElementById('counter');
-const progressFill = document.getElementById('progressFill');
-const btnSelesai = document.getElementById('btnSelesai');
 
 render();
 
 /* ===============================
-   COUNTER KATA REALTIME
+   SIMPAN JAWABAN
 ================================ */
-jawabanEl.addEventListener('input', updateCounter);
+function simpan() {
+  jawaban[index] = {
+    j1: jawab1.value,
+    j2: jawab2.value,
+    j3: jawab3.value,
+    j4: jawab4.value
+  };
+}
 
+/* ===============================
+   VALIDASI 150 KATA
+================================ */
 function hitungKata(teks) {
   return teks.trim().split(/\s+/).filter(Boolean).length;
 }
 
-function updateCounter() {
-  const jumlah = hitungKata(jawabanEl.value);
-  counter.innerText = `${jumlah} / ${MIN_KATA} kata`;
+function validKasus(data) {
+  return (
+    hitungKata(data.j1) >= MIN_KATA &&
+    hitungKata(data.j2) >= MIN_KATA &&
+    hitungKata(data.j3) >= MIN_KATA &&
+    hitungKata(data.j4) >= MIN_KATA
+  );
 }
 
 /* ===============================
-   NEXT STEP
+   NAVIGASI
 ================================ */
-function next() {
-  const jumlah = hitungKata(jawabanEl.value);
-  if (jumlah < MIN_KATA) {
-    alert('Minimal 150 kata');
-    return;
+function nextKasus() {
+  simpan();
+  if (index < 3) {
+    index++;
+    render();
   }
+  cekSelesai();
+}
 
-  jawaban[step] = jawabanEl.value;
-  step++;
-
-  if (step >= 4) {
-    btnSelesai.disabled = false;
-    jawabanEl.disabled = true;
-    return;
+function prevKasus() {
+  simpan();
+  if (index > 0) {
+    index--;
+    render();
   }
-
-  render();
 }
 
 /* ===============================
    PROGRESS
 ================================ */
 function updateProgress() {
-  progressFill.style.width = `${(step / 4) * 100}%`;
+  const selesai = jawaban.filter(validKasus).length;
+  document.getElementById('progressText').innerText =
+    `${selesai} / 4`;
+  document.getElementById('progressFill').style.width =
+    `${(selesai / 4) * 100}%`;
+}
+
+function cekSelesai() {
+  const semua = jawaban.every(validKasus);
+  document.getElementById('btnSelesai').disabled = !semua;
 }
 
 /* ===============================
    SELESAI
 ================================ */
-function selesai(auto = false) {
-  if (!auto && !confirm('Yakin ingin menyelesaikan studi kasus?')) return;
+function selesaiUjian(auto = false) {
+  simpan();
 
-  localStorage.setItem('hasilCase', JSON.stringify({
-    jenis: kasus.nama,
-    jawaban
-  }));
+  if (!auto) {
+    if (!confirm('Yakin ingin menyelesaikan studi kasus?')) return;
+  }
 
+  if (!jawaban.every(validKasus)) {
+    alert('Semua jawaban harus minimal 150 kata.');
+    return;
+  }
+
+  localStorage.setItem('hasilCase', JSON.stringify(jawaban));
   window.location.href = '/cbt-web-app/pages/result.html';
 }
