@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hasil Ujian</title>
@@ -14,7 +15,11 @@
 
   <!-- IDENTITAS PESERTA -->
   <div class="card greeting-card">
-    <h2 id="namaPeserta">-</h2>
+   <h2>
+  <i class="fa-solid fa-user"></i>
+  <span id="namaPeserta">-</span>
+</h2>
+
     <p class="section-title">Rekap Hasil Ujian</p>
   </div>
 
@@ -25,7 +30,11 @@
 
   <!-- HASIL PILIHAN GANDA -->
   <div class="card result-card">
-    <h3 class="section-title">Hasil Pilihan Ganda</h3>
+  <h3 class="section-title">
+  <i class="fa-solid fa-clipboard-check"></i>
+  Hasil Pilihan Ganda
+</h3>
+
 
     <p>Jawaban Benar: <b id="benar">0</b></p>
     <p>Total Soal: <b id="total">0</b></p>
@@ -38,18 +47,19 @@
   <!-- AKSI -->
 <div class="card">
   <div class="action-buttons">
-    <button class="btn-secondary" onclick="kembali()">
-      Dashboard
-    </button>
-    
-    <button class="btn-secondary" onclick="lihatJawabanPG()">
-      Lihat Jawaban PG
-    </button>
-    
-    <button class="btn-primary" onclick="exportPDF()">
-      Export PDF
-    </button>
-  </div>
+  <button class="btn-secondary" onclick="kembali()">
+    <i class="fa-solid fa-house"></i> Dashboard
+  </button>
+
+  <button class="btn-secondary" onclick="lihatJawabanPG()">
+    <i class="fa-solid fa-eye"></i> Lihat Jawaban
+  </button>
+
+  <button class="btn-primary" onclick="exportPDF()">
+    <i class="fa-solid fa-file-pdf"></i> Export PDF
+  </button>
+</div>
+
 </div>
 
   </div>
