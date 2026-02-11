@@ -15,8 +15,13 @@ let startTime = localStorage.getItem('pg_startTime');
 /* ===============================
    PARAMETER
 ================================ */
-const mapel = localStorage.getItem('mapel') || 'mapel';
-const paket = localStorage.getItem('paket') || 'paket1';
+const mapel = localStorage.getItem('mapel');
+const paket = localStorage.getItem('paket');
+
+if (!mapel || !paket) {
+  alert("Data ujian tidak valid. Silakan pilih paket soal yg tersedia.");
+  window.location.href = "/cbt-web-app/pages/dashboard.html";
+}
 
 /* ===============================
    FULLSCREEN HANDLER
