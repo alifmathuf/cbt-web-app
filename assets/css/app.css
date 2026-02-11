@@ -382,6 +382,19 @@ textarea:focus {
   border-color: var(--primary);
 }
 
+.exam-case textarea {
+  background: rgba(255,255,255,0.95);
+  color: #0f172a;
+  border-radius: 16px;
+  padding: 16px;
+  font-size: 14px;
+  line-height: 1.6;
+  border: 2px solid rgba(0,0,0,.08);
+}
+
+.exam-case textarea:focus {
+  border-color: #22c55e;
+}
 /* ==================================================
    EXAM CASE – UI PATCH (SAFE)
 ================================================== */
