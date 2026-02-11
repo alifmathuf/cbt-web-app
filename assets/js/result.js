@@ -20,7 +20,7 @@ if (hasilPG) {
     document.getElementById('total').innerText = hasilPG.total;
     document.getElementById('nilai').innerText = hasilPG.nilai;
 
-    statusPG = hasilPG.nilai >= 75 ? 'LULUS PG' : 'BELUM LULUS PG';
+    statusPG = hasilPG.nilai >= 75 ? '✅ LULUS PG' : '❌ BELUM LULUS PG';
     document.getElementById('status').innerText = statusPG;
 
     const ctx = document.getElementById('chartNilai');
