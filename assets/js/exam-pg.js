@@ -75,9 +75,26 @@ fetch(`/cbt-web-app/data/${mapel}/${paket}.json`)
       };
     });
 
+    /* ===============================
+       🔥 SIMPAN DATA UNTUK REVIEW PG
+       (DITAMBAHKAN DI SINI)
+    ================================ */
+    localStorage.setItem(
+      'pg_soal',
+      JSON.stringify(soal.map(s => s.q))
+    );
+
+    localStorage.setItem(
+      'pg_kunci',
+      JSON.stringify(soal.map(s => s.kunci))
+    );
+
+    /* =============================== */
+
     initGrid();
     tampilSoal();
   });
+
 
 /* ===============================
    TIMER REAL + WARNING
