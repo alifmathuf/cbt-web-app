@@ -2,13 +2,12 @@
    CEK LOGIN
 ========================= */
 const user = JSON.parse(localStorage.getItem('cbtUser'));
-
 if (!user) {
   window.location.href = '/cbt-web-app/index.html';
 }
 
 /* =========================
-   GREETING & USER INFO
+   GREETING & USER INFO + AVATAR
 ========================= */
 const userInfo = document.getElementById('userInfo');
 const greetingEl = document.getElementById('greeting');
@@ -20,32 +19,53 @@ if (userInfo) {
 if (greetingEl) {
   const hour = new Date().getHours();
   let waktu = 'pagi';
-
   if (hour >= 12 && hour < 15) waktu = 'siang';
   else if (hour >= 15 && hour < 18) waktu = 'sore';
   else if (hour >= 18 || hour < 6) waktu = 'malam';
 
-  greetingEl.innerText = `Assalaamualaikum, selamat ${waktu}`;
+  greetingEl.innerText = `Assalaamu'alaikum Selamat ${waktu}`;
 }
 
 /* =========================
-   PILIH MAPEL (DARI BOX)
+   PILIH MAPEL
 ========================= */
 let selectedMapel = null;
+let selectedPaket = null;
 
 function pilihMapel(mapel) {
   selectedMapel = mapel;
+  selectedPaket = null;
+
   localStorage.setItem('mapel', mapel);
+  localStorage.removeItem('paket');
 
-  // efek aktif pada box mapel
-  document.querySelectorAll('.mapel-box').forEach(btn => {
-    btn.classList.remove('active');
-  });
+  document.querySelectorAll('.mapel-box')
+    .forEach(btn => btn.classList.remove('active'));
 
-  const activeBtn = [...document.querySelectorAll('.mapel-box')]
-    .find(b => b.textContent.toLowerCase().includes(mapel));
+  event.target.closest('.mapel-box')
+    .classList.add('active');
 
-  if (activeBtn) activeBtn.classList.add('active');
+  document.querySelectorAll('.paket-box')
+    .forEach(btn => btn.classList.remove('active'));
+}
+
+/* =========================
+   PILIH PAKET
+========================= */
+function pilihPaket(p) {
+  if (!selectedMapel) {
+    alert("Silakan pilih Mapel terlebih dahulu.");
+    return;
+  }
+
+  selectedPaket = `paket${p}`;
+  localStorage.setItem('paket', selectedPaket);
+
+  document.querySelectorAll('.paket-box')
+    .forEach(btn => btn.classList.remove('active'));
+
+  event.target.closest('.paket-box')
+    .classList.add('active');
 }
 
 /* =========================
@@ -54,15 +74,16 @@ function pilihMapel(mapel) {
 function mulaiUjian() {
   const tipe = document.querySelector('input[name="tipe"]:checked');
 
-  if (!selectedMapel) {
-    alert('Pilih mata pelajaran terlebih dahulu');
+  if (!selectedMapel || !selectedPaket || !tipe) {
+    alert("Silakan pilih Mapel, Paket Soal, dan Tipe Ujian terlebih dahulu.");
     return;
   }
 
-  if (!tipe) {
-    alert('Pilih tipe ujian');
-    return;
-  }
+  const konfirmasi = confirm(
+    `Anda akan mengerjakan:\n\nMapel: ${selectedMapel.toUpperCase()}\nPaket: ${selectedPaket}\nTipe: ${tipe.value.toUpperCase()}\n\nUjian tidak dapat diulang.\nLanjutkan?`
+  );
+
+  if (!konfirmasi) return;
 
   if (tipe.value === 'pg') {
     window.location.href = '/cbt-web-app/pages/exam-pg.html';
@@ -70,33 +91,3 @@ function mulaiUjian() {
     window.location.href = '/cbt-web-app/pages/exam-case.html';
   }
 }
-
-/* =========================
-   REKAP HASIL TERAKHIR
-========================= */
-const hasilPG = JSON.parse(localStorage.getItem('hasilPG'));
-const hasilCase = JSON.parse(localStorage.getItem('hasilCase'));
-const rekap = document.getElementById('rekap');
-
-if (rekap) {
-  let teks = '';
-
-  if (hasilPG) {
-    teks += `PG: Nilai ${hasilPG.nilai}`;
-  }
-
-  if (hasilCase) {
-    teks += `${teks ? ' | ' : ''}Studi Kasus selesai`;
-  }
-
-  rekap.innerText = teks || 'Belum ada hasil';
-}
-
-rekapEl.style.opacity = "0";
-rekapEl.style.transform = "translateY(6px)";
-setTimeout(() => {
-  rekapEl.textContent = teks;
-  rekapEl.style.opacity = "1";
-  rekapEl.style.transform = "translateY(0)";
-}, 150);
-
