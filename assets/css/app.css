@@ -326,35 +326,6 @@ body {
   font-weight: 600;
 }
 
-/* ===== TOP BAR EXAM ONLY ===== */
-.exam-topbar {
-  margin-bottom: 20px;
-}
-
-.exam-top-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#timer {
-  font-size: 20px;
-  font-weight: 700;
-  color: #22c55e;
-}
-
-.progress-text {
-  font-weight: 600;
-}
-
-/* HP */
-@media (max-width: 600px) {
-  .exam-top-info {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 4px;
-  }
-}
 /* ==================================================
    PROGRESS BAR
 ================================================== */
