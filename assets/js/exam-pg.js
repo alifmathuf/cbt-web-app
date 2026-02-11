@@ -80,10 +80,15 @@ fetch(`/cbt-web-app/data/${mapel}/${paket}.json`)
        (DITAMBAHKAN DI SINI)
     ================================ */
     localStorage.setItem(
-      'pg_soal',
-      JSON.stringify(soal.map(s => s.q))
-    );
-
+  'pg_soal',
+  JSON.stringify(soal.map(s => String(s.q)))
+);
+     localStorage.setItem(
+  'pg_opsi',
+  JSON.stringify(
+    soal.map(s => s.opsi.map(o => o.text))
+  )
+);
     localStorage.setItem(
       'pg_kunci',
       JSON.stringify(soal.map(s => s.kunci))
