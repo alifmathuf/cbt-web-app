@@ -54,15 +54,18 @@ if (hasilCase) {
         totalKata += teks.trim().split(/\s+/).filter(Boolean).length;
     });
 
-    wrap.innerHTML = `
-        <div class="card result-card">
-            <h3 class="section-title">Hasil Studi Kasus</h3>
-            <p>Jenis Soal: <b>${jenisCase}</b></p>
-            <p>Total Kata: <b>${totalKata}</b></p>
-            <p>Total Karakter: <b>${totalKarakter}</b></p>
-        </div>
-    `;
-}
+   wrap.innerHTML = `
+  <div class="card result-card">
+    <h3 class="section-title">
+      <i class="fa-solid fa-book-open"></i>
+      Hasil Studi Kasus
+    </h3>
+    <p><i class="fa-solid fa-layer-group"></i> Jenis Soal: <b>${jenisCase}</b></p>
+    <p><i class="fa-solid fa-font"></i> Total Kata: <b>${totalKata}</b></p>
+    <p><i class="fa-solid fa-keyboard"></i> Total Karakter: <b>${totalKarakter}</b></p>
+  </div>
+`;
+
 // ================= NAVIGASI =================
 function kembali() {
     window.location.href = '/cbt-web-app/pages/dashboard.html';
