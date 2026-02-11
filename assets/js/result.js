@@ -65,7 +65,7 @@ if (hasilCase) {
     <p><i class="fa-solid fa-keyboard"></i> Total Karakter: <b>${totalKarakter}</b></p>
   </div>
 `;
-
+}
 // ================= NAVIGASI =================
 function kembali() {
     window.location.href = '/cbt-web-app/pages/dashboard.html';
