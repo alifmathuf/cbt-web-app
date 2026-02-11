@@ -535,7 +535,21 @@ textarea:focus {
 .result-card {
   text-align: center;
 }
+/* ================= ACTION BUTTONS ================= */
+.action-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}
 
+.action-buttons button {
+    flex: 1 1 200px;
+    padding: 12px 16px;
+    font-size: 15px;
+    border-radius: 8px;
+    min-width: 140px;
+}
 .review-table {
   width: 100%;
   border-collapse: collapse;
