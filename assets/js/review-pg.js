@@ -1,7 +1,10 @@
-const data = JSON.parse(localStorage.getItem('hasilPG'));
+const jawabanUser = JSON.parse(localStorage.getItem('pg_jawaban') || '[]');
+const soal = JSON.parse(localStorage.getItem('pg_soal') || '[]');
+const kunci = JSON.parse(localStorage.getItem('pg_kunci') || '[]');
+
 const tbody = document.getElementById('tabelJawaban');
 
-if (!data) {
+if (jawabanUser.length === 0) {
   tbody.innerHTML = `
     <tr>
       <td colspan="5" style="text-align:center">
@@ -10,15 +13,15 @@ if (!data) {
     </tr>
   `;
 } else {
-  data.soal.forEach((soal, i) => {
-    const benar = data.jawabanUser[i] === data.kunci[i];
+  jawabanUser.forEach((jawab, i) => {
+    const benar = kunci[i] === jawab;
 
     tbody.innerHTML += `
       <tr>
         <td>${i + 1}</td>
-        <td>${soal}</td>
-        <td>${data.jawabanUser[i]}</td>
-        <td>${data.kunci[i]}</td>
+        <td>${soal[i] || '-'}</td>
+        <td>Opsi ${String.fromCharCode(65 + jawab)}</td>
+        <td>${kunci[i] != null ? 'Opsi ' + String.fromCharCode(65 + kunci[i]) : '-'}</td>
         <td style="font-weight:700;color:${benar ? '#16a34a' : '#dc2626'}">
           ${benar ? 'Benar' : 'Salah'}
         </td>
