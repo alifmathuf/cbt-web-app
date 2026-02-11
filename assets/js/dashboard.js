@@ -109,3 +109,21 @@ if (leaderboard.length) {
       `;
     });
 }
+const leaderboard = JSON.parse(localStorage.getItem('leaderboard') || '[]');
+const tbody = document.getElementById('leaderboardData');
+
+if (leaderboard.length) {
+  tbody.innerHTML = '';
+  leaderboard
+    .sort((a, b) => b.nilai - a.nilai)
+    .slice(0, 5)
+    .forEach((d, i) => {
+      tbody.innerHTML += `
+        <tr>
+          <td>${i + 1}</td>
+          <td>${d.nama}</td>
+          <td>${d.nilai}</td>
+        </tr>
+      `;
+    });
+}
