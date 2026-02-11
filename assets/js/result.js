@@ -61,8 +61,22 @@ function kembali() {
   window.location.href = '/cbt-web-app/pages/dashboard.html';
 }
 function exportPDF() {
-  alert('Export PDF akan diaktifkan di step berikutnya');
-}
+  const { jsPDF } = window.jspdf;
+  const doc = new jsPDF();
+  let y = 20;
+
+  const user = JSON.parse(localStorage.getItem('user'));
+  const hasilPG = JSON.parse(localStorage.getItem('hasilPG'));
+  const hasilCase = JSON.parse(localStorage.getItem('hasilCase'));
+  const soalPG = JSON.parse(localStorage.getItem('soalPG'));
+
+  doc.setFontSize(14);
+  doc.text('LAPORAN HASIL UJIAN CBT', 20, y); y += 10;
+
+  doc.setFontSize(11);
+  doc.text(`Nama: ${user.nama}`, 20, y); y += 6;
+  doc.text(`Kelas: ${user.kelas}`, 20, y); y += 10;
+  
 function lihatJawabanPG() {
   window.location.href = '/cbt-web-app/pages/review-pg.html';
 }
