@@ -449,6 +449,24 @@ footer {
   opacity: .75;
 }
 
+/* ==================================================
+   ANIMATION & RESPONSIVE
+================================================== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .soal-grid { grid-template-columns: repeat(5, 1fr); }
+}
+
+@media (max-width: 480px) {
+  .nav-soal button,
+  .result-actions button {
+    min-width: 100%;
+  }
+}
 
 /* ===============================
    BUTTON SYSTEM (GLOBAL)
@@ -527,21 +545,23 @@ footer {
   padding: 12px 18px;
   border-radius: 14px;
 }
-/* ==================================================
-   ANIMATION & RESPONSIVE
-================================================== */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(8px); }
-  to { opacity: 1; transform: translateY(0); }
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin: 12px 0 4px;
 }
 
-@media (max-width: 768px) {
-  .soal-grid { grid-template-columns: repeat(5, 1fr); }
+.btn-start {
+  padding: 14px 36px;
+  border-radius: 18px;
+  font-size: 16px;
+  font-weight: 700;
 }
 
-@media (max-width: 480px) {
-  .nav-soal button,
-  .result-actions button {
-    min-width: 100%;
-  }
+.btn-logout {
+  padding: 14px 28px;
+  border-radius: 18px;
+  font-size: 14px;
+  opacity: 0.85;
 }
