@@ -8,27 +8,29 @@ const tbody = document.getElementById('tabelJawaban');
 if (!jawabanUser.length) {
   tbody.innerHTML = `
     <tr>
-      <td colspan="5" style="text-align:center">
+      <td colspan="4" style="text-align:center">
         Data jawaban tidak ditemukan
       </td>
     </tr>
   `;
 } else {
   jawabanUser.forEach((jawab, i) => {
+
     const benar = kunci[i] === jawab;
+
+    const badge = benar
+      ? `<span class="badge badge-success">✔ Benar</span>`
+      : `<span class="badge badge-danger">✘ Salah</span>`;
 
     tbody.innerHTML += `
       <tr>
         <td>${i + 1}</td>
         <td>${soal[i] || '-'}</td>
         <td>
-          ${opsi[i] ? opsi[i][jawab] : '-'}
+          ${opsi[i] && jawab != null ? opsi[i][jawab] : '-'}
         </td>
         <td>
-          ${opsi[i] && kunci[i] != null ? opsi[i][kunci[i]] : '-'}
-        </td>
-        <td style="font-weight:700;color:${benar ? '#16a34a' : '#dc2626'}">
-          ${benar ? 'Benar' : 'Salah'}
+          ${badge}
         </td>
       </tr>
     `;
