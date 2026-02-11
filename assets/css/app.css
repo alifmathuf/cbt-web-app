@@ -382,12 +382,6 @@ textarea:focus {
   border-color: var(--primary);
 }
 
-@media (max-width: 600px) {
-  textarea {
-    min-height: 100px;
-  }
-}
-
 /* ==================================================
    EXAM CASE – UI PATCH (SAFE)
 ================================================== */
@@ -475,6 +469,12 @@ textarea:focus {
   opacity: .5;
 }
 
+
+@media (max-width: 600px) {
+  textarea {
+    min-height: 100px;
+  }
+}
 
 /* ==================================================
    SCORE RING (RESULT)
