@@ -372,3 +372,34 @@ footer {
     min-width: 100%;
   }
 }
+/* ===============================
+   BUTTON SYSTEM (GLOBAL)
+================================ */
+
+.btn-primary {
+  padding: 14px 34px;
+  border-radius: 18px;
+  font-size: 16px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:disabled {
+  background: rgba(255,255,255,.15);
+  color: rgba(255,255,255,.6);
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  padding: 14px 34px;
+  border-radius: 18px;
+  font-size: 16px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #0f172a, #0891b2);
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
