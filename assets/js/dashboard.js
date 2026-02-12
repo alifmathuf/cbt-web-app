@@ -52,36 +52,19 @@ function pilihMapel(mapel) {
 /* =========================
    PILIH PAKET
 ========================= */
-async function pilihPaket(p) {
+function pilihPaket(p, el) {
   if (!selectedMapel) {
     alert("Silakan pilih Mapel terlebih dahulu.");
     return;
   }
 
-  const paketName = `paket${p}`;
-  const filePath = `/cbt-web-app/data/${selectedMapel}/${paketName}.json`;
+  selectedPaket = `paket${p}`;
+  localStorage.setItem('paket', selectedPaket);
 
-  try {
-    const response = await fetch(filePath);
+  document.querySelectorAll('.paket-box')
+    .forEach(btn => btn.classList.remove('active'));
 
-    if (!response.ok) {
-      alert("Mohon maaf, paket soal belum tersedia.");
-      return;
-    }
-
-    // Jika file ada
-    selectedPaket = paketName;
-    localStorage.setItem('paket', selectedPaket);
-
-    document.querySelectorAll('.paket-box')
-      .forEach(btn => btn.classList.remove('active'));
-
-    event.target.closest('.paket-box')
-      .classList.add('active');
-
-  } catch (error) {
-    alert("Mohon maaf, paket soal belum tersedia.");
-  }
+  el.classList.add('active');
 }
 
 /* =========================
