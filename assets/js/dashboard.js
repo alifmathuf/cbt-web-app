@@ -85,7 +85,7 @@ async function pilihPaket(p) {
       .classList.add('active');
 
   } catch (error) {
-    alert("Mohon maaf, paket soal belum tersedia.");
+    alert(".");
   }
 }
 
