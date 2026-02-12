@@ -1,92 +1,70 @@
-/* =========================
-   CEK LOGIN
-========================= */
-const user = JSON.parse(localStorage.getItem('cbtUser'));
-if (!user) {
-  window.location.href = '/cbt-web-app/index.html';
-}
-
-/* =========================
-   GREETING & USER INFO + AVATAR
-========================= */
-const userInfo = document.getElementById('userInfo');
-const greetingEl = document.getElementById('greeting');
-
-if (userInfo) {
-  userInfo.innerText = `${user.nama} (${user.kelas})`;
-}
-
-if (greetingEl) {
-  const hour = new Date().getHours();
-  let waktu = 'pagi';
-  if (hour >= 12 && hour < 15) waktu = 'siang';
-  else if (hour >= 15 && hour < 18) waktu = 'sore';
-  else if (hour >= 18 || hour < 6) waktu = 'malam';
-
-  greetingEl.innerText = `Assalaamu'alaikum selamat ${waktu}`;
-}
-
-/* =========================
-   PILIH MAPEL
-========================= */
 let selectedMapel = null;
 let selectedPaket = null;
+let selectedTipe = null;
 
-function pilihMapel(mapel) {
+function pilihMapel(mapel, el) {
   selectedMapel = mapel;
-  selectedPaket = null;
 
-  localStorage.setItem('mapel', mapel);
-  localStorage.removeItem('paket');
+  document.querySelectorAll(".mapel-grid button")
+    .forEach(b => b.classList.remove("active"));
+  el.classList.add("active");
 
-  document.querySelectorAll('.mapel-box')
-    .forEach(btn => btn.classList.remove('active'));
-
-  event.target.closest('.mapel-box')
-    .classList.add('active');
-
-  document.querySelectorAll('.paket-box')
-    .forEach(btn => btn.classList.remove('active'));
+  nextStep(2);
 }
 
-/* =========================
-   PILIH PAKET
-========================= */
 function pilihPaket(p, el) {
-  if (!selectedMapel) {
-    alert("Silakan pilih Mapel terlebih dahulu.");
-    return;
-  }
+  selectedPaket = "paket" + p;
 
-  selectedPaket = `paket${p}`;
-  localStorage.setItem('paket', selectedPaket);
+  document.querySelectorAll(".paket-grid button")
+    .forEach(b => b.classList.remove("active"));
+  el.classList.add("active");
 
-  document.querySelectorAll('.paket-box')
-    .forEach(btn => btn.classList.remove('active'));
-
-  el.classList.add('active');
+  nextStep(3);
 }
 
-/* =========================
-   MULAI UJIAN
-========================= */
-function mulaiUjian() {
-  const tipe = document.querySelector('input[name="tipe"]:checked');
+function pilihTipe(tipe, el) {
+  selectedTipe = tipe;
 
-  if (!selectedMapel || !selectedPaket || !tipe) {
-    alert("Silakan pilih Mapel, Paket Soal, dan Tipe Ujian terlebih dahulu.");
+  document.querySelectorAll(".tipe-grid button")
+    .forEach(b => b.classList.remove("active"));
+  el.classList.add("active");
+
+  // Jika Studi Kasus → skip paket
+  if (tipe === "case") {
+    selectedPaket = null;
+  }
+}
+
+function nextStep(step) {
+  document.querySelectorAll(".step")
+    .forEach(s => s.classList.remove("active"));
+  document.getElementById("step" + step)
+    .classList.add("active");
+
+  document.querySelectorAll(".step-panel")
+    .forEach(p => p.classList.add("hidden"));
+
+  if (step === 2) {
+    document.getElementById("panel-paket").classList.remove("hidden");
+  }
+  if (step === 3) {
+    document.getElementById("panel-tipe").classList.remove("hidden");
+  }
+}
+
+function mulaiUjian() {
+  if (!selectedMapel || !selectedTipe) {
+    alert("Lengkapi pilihan terlebih dahulu.");
     return;
   }
 
-  const konfirmasi = confirm(
-    `Anda akan mengerjakan:\n\nMapel: ${selectedMapel.toUpperCase()}\nPaket: ${selectedPaket}\nTipe: ${tipe.value.toUpperCase()}\n\nUjian tidak dapat diulang.\nLanjutkan?`
-  );
+  localStorage.setItem("mapel", selectedMapel);
+  localStorage.setItem("paket", selectedPaket);
+  localStorage.setItem("tipe", selectedTipe);
 
-  if (!konfirmasi) return;
-
-  if (tipe.value === 'pg') {
-    window.location.href = '/cbt-web-app/pages/exam-pg.html';
+  if (selectedTipe === "pg") {
+    window.location.href = "/cbt-web-app/pages/exam-pg.html";
   } else {
-    window.location.href = '/cbt-web-app/pages/exam-case.html';
+    window.location.href = "/cbt-web-app/pages/exam-case.html";
   }
 }
